@@ -1,0 +1,3326 @@
+[
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": true,
+    "hasAltTotal": true,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1249774441,
+    "isBetshareEnabled": false,
+    "isHighlighted": true,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": null,
+    "parentId": null,
+    "parlayRestriction": "allowed",
+    "participants": [
+      { "alignment": "home", "name": "Cleveland Cavaliers", "order": 1 },
+      { "alignment": "away", "name": "Detroit Pistons", "order": 0 }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-01-28T00:10:00Z",
+        "hasMoneyline": true,
+        "hasSpread": true,
+        "hasTeamTotal": true,
+        "hasTotal": true,
+        "period": 0,
+        "status": "open"
+      },
+      {
+        "cutoffAt": "2021-01-28T00:10:00Z",
+        "hasMoneyline": true,
+        "hasSpread": true,
+        "hasTeamTotal": true,
+        "hasTotal": true,
+        "period": 1,
+        "status": "open"
+      },
+      {
+        "cutoffAt": "2021-01-28T00:10:00Z",
+        "hasMoneyline": true,
+        "hasSpread": true,
+        "hasTeamTotal": true,
+        "hasTotal": true,
+        "period": 3,
+        "status": "open"
+      }
+    ],
+    "rotation": 529,
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "matchup",
+    "units": "Regular",
+    "version": 302805704
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250536173,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250536174,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250536175,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Jerami Grant (Points)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Points",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250536177,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250536178,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250536179,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Jerami Grant (Assists)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Assists",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250536181,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250536182,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250536183,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Jerami Grant (Turnovers)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250536189,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250536190,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250536191,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Jerami Grant (3 Point FG)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250536193,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250536194,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250536195,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Jerami Grant (Rebounds)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250536198,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250536199,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250536200,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Jerami Grant (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250536201,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250536202,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250536203,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Jerami Grant (Blocks)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Blocks",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250536204,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250536205,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250536206,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Jerami Grant (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250536996,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250536999,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250537000,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Collin Sexton (Points)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Points",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250537003,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250537004,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250537005,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Collin Sexton (Assists)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Assists",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250537017,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250537018,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250537019,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Collin Sexton (Turnovers)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250537021,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250537022,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250537023,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Collin Sexton (3 Point FG)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250537036,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250537038,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250537039,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Collin Sexton (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250537044,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250537045,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250537047,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Collin Sexton (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250537973,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250537974,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250537976,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Andre Drummond (Points)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Points",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250537979,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250537980,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250537981,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Andre Drummond (Assists)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Assists",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250537985,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250537986,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250537987,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Andre Drummond (Turnovers)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250537994,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250537995,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250537996,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Andre Drummond (Rebounds)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250537999,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250538000,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250538001,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Andre Drummond (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250538002,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250538003,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250538004,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Andre Drummond (Double+Double)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "DoubleDouble",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250538011,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250538012,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250538013,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Andre Drummond (Blocks)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Blocks",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250538015,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250538016,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250538017,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Andre Drummond (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818098,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818099,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818100,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Delon Wright (Points)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Points",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818102,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818104,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818105,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Delon Wright (Assists)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Assists",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818106,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818107,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818108,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Delon Wright (Turnovers)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818110,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818111,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818112,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Delon Wright (Rebounds)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818116,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818118,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818119,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Delon Wright (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818122,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818123,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818124,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Delon Wright (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818153,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818154,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818155,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Mason Plumlee (Points)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Points",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818158,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818159,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818160,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Mason Plumlee (Assists)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Assists",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818163,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818164,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818165,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Mason Plumlee (Turnovers)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818167,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818168,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818169,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Mason Plumlee (Rebounds)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818172,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818173,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818174,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Mason Plumlee (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818177,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818178,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818179,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Mason Plumlee (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818308,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818309,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818310,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Wayne Ellington (Points)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Points",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818312,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818313,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818314,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Wayne Ellington (3 Point FG)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250818320,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250818321,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250818322,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Wayne Ellington (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250922208,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250922209,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250922210,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Isaac Okoro (Points)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Points",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250929360,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250929361,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250929362,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Isaac Okoro (Turnovers)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 94428621
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1250929363,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 14,
+      "matchupCountSE": 14,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 111,
+        "matchupCountSE": 106,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1249774441,
+      "participants": [
+        { "alignment": "home", "name": "Cleveland Cavaliers", "score": null },
+        { "alignment": "away", "name": "Detroit Pistons", "score": null }
+      ],
+      "startTime": "2021-01-28T00:05:00+00:00"
+    },
+    "parentId": 1249774441,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1250929364,
+        "name": "Over",
+        "order": 0,
+        "rotation": 530
+      },
+      {
+        "alignment": "neutral",
+        "id": 1250929365,
+        "name": "Under",
+        "order": 0,
+        "rotation": 531
+      }
+    ],
+    "periods": [
+      { "cutoffAt": "2021-01-28T00:10:00Z", "period": 0, "status": "open" }
+    ],
+    "rotation": 530,
+    "special": {
+      "category": "Player Props",
+      "description": "Isaac Okoro (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-01-28T00:05:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 94428621
+  }
+]
