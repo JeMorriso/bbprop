@@ -1,8 +1,86 @@
 import json
+from typing import List, Dict, Tuple
+import logging
 
 from seleniumwire import webdriver
 
-from typing import List, Dict
+from bbprop.bet import Bet
+
+logger = logging.getLogger(__name__)
+
+
+class PinnacleGame:
+    def __init__(self, straight, related, clean=True):
+        """Store captured information about available bets on Pinnacle for a game.
+
+        Attributes:
+            straight: Response from Pinnacle, to merge.
+            related: Response from Pinnacle, to merge.
+        """
+        self.straight = straight
+        self.related = related
+
+        self._props_dict = {}
+        self.props = []
+
+        if clean:
+            self._props_dict = self._build_props()
+            self.props = self.prop_bets()
+
+    def build_props(self) -> Dict:
+        """Merge straight and related props.
+
+        Return:
+            Prop bet information merged into one dictionary.
+        """
+
+        def prop_filter(d):
+            try:
+                return d["special"]["category"] == "Player Props"
+            except KeyError:
+                return False
+
+        # Filter out prop bets.
+        related_props = list(filter(prop_filter, self.related))
+
+        # Pull info from related list.
+        props = {}
+        for p in related_props:
+            k = p["id"]
+            v = {"description": p["special"]["description"]}
+            for part in p["participants"]:
+                v[part["id"]] = {"name": part["name"]}
+            props[k] = v
+
+        # Merge info from straight list.
+        for p in self.straight:
+            if p["matchupId"] in props:
+                for d in p["prices"]:
+                    props[p["matchupId"]][d["participantId"]].update(d)
+
+        return props
+
+    def _parse_description(self, desc: str) -> Tuple[str]:
+        """Parse player description into name and scoring categories.
+
+        Returns:
+            Tuple of name and category string.
+        """
+        oi = desc.find("(")
+        ci = desc.find(")")
+        if oi == -1 or ci == -1:
+            logger.warning(f'Prop description is malformed: "{desc}".')
+            return "", ""
+
+        name = desc[:oi].strip()
+        cat = desc[oi + 1 : ci]
+        return name, cat
+
+    def prop_bets(self) -> List[Dict]:
+        """Clean props dict, return list of Bets."""
+        if not self._props_dict:
+
+            pass
 
 
 class Pinnacle:
@@ -11,6 +89,8 @@ class Pinnacle:
 
         opts = webdriver.ChromeOptions()
         opts.add_argument("--headless")
+
+        self._props_dict = {}
         self.driver = webdriver.Chrome(options=opts)
 
     def __enter__(self):
@@ -55,6 +135,11 @@ class Pinnacle:
         pass
 
     def game(self, click_el=None, url=None):
+        """Go to Pinnacle game page, capture relevant requests.
+
+        Return:
+            Object containing formatted list of bets.
+        """
         del self.driver.requests
 
         if url is not None:
@@ -72,45 +157,4 @@ class Pinnacle:
             match = self._find_request(r)
             data.append(json.loads(match.response.body))
 
-        return data
-
-    def filter_straight(self, criteria):
-        """Filter out elements from straight dictionary that match criteria."""
-        pass
-
-    def build_props(self, straight: List[Dict], related: List[Dict]) -> Dict:
-        """Merge straight and related props.
-
-        Args:
-            straight: Response from Pinnacle, to merge.
-            related: Response from Pinnacle, to merge.
-
-        Return:
-            Prop bet information merged into one dictionary.
-        """
-
-        def prop_filter(d):
-            try:
-                return d["special"]["category"] == "Player Props"
-            except KeyError:
-                return False
-
-        # Filter out prop bets.
-        related_props = list(filter(prop_filter, related))
-
-        # Pull info from related list.
-        props = {}
-        for p in related_props:
-            k = p["id"]
-            v = {"description": p["special"]["description"]}
-            for part in p["participants"]:
-                v[part["id"]] = {"name": part["name"]}
-            props[k] = v
-
-        # Merge info from straight list.
-        for p in straight:
-            if p["matchupId"] in props:
-                for d in p["prices"]:
-                    props[p["matchupId"]][d["participantId"]].update(d)
-
-        return props
+        return PinnacleGame(*data)
