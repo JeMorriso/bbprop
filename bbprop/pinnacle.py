@@ -27,7 +27,40 @@ class PinnacleGame:
             self._props_dict = self._build_props()
             self.props = self.prop_bets()
 
-    def build_props(self) -> Dict:
+    def _parse_description(self, desc: str) -> Tuple[str]:
+        """Parse player description into name and scoring categories.
+
+        Returns:
+            Tuple of name and category string.
+        """
+        translations = {
+            "points": ("pts",),
+            "assists": ("ast",),
+            "turnovers": ("tov",),
+            "3 point fg": ("fg3m",),
+            "rebounds": ("reb",),
+            "blocks": ("blk",),
+            "pts+rebs+asts": ("pts", "reb", "ast"),
+            "steals+blocks": ("stl", "blk"),
+            "double+double": ("dd2"),
+        }
+
+        oi = desc.find("(")
+        ci = desc.find(")")
+        if oi == -1 or ci == -1:
+            logger.warning(f'Prop description is malformed: "{desc}".')
+            return "", ()
+
+        name = desc[:oi].strip()
+        pin_cat = desc[oi + 1 : ci]
+        try:
+            cat = translations[pin_cat.lower()]
+        except KeyError:
+            logger.warning(f'Could not find scoring category "{pin_cat}".')
+            cat = ()
+        return name, cat
+
+    def prop_bets(self) -> Dict:
         """Merge straight and related props.
 
         Return:
@@ -40,47 +73,59 @@ class PinnacleGame:
             except KeyError:
                 return False
 
+        def team(teams, alignment):
+            return next(
+                part["name"]
+                for part in p["parent"]["participants"]
+                if part["alignment"] == alignment
+            )
+
         # Filter out prop bets.
-        related_props = list(filter(prop_filter, self.related))
+        related = list(filter(prop_filter, self.related))
+        straight_dict = {s["matchupId"]: s for s in self.straight}
 
         # Pull info from related list.
-        props = {}
-        for p in related_props:
-            k = p["id"]
-            v = {"description": p["special"]["description"]}
-            for part in p["participants"]:
-                v[part["id"]] = {"name": part["name"]}
-            props[k] = v
+        bets = []
+        for p in related:
+            try:
+                bet_info = {"sportsbook": "Pinnacle"}
 
-        # Merge info from straight list.
-        for p in self.straight:
-            if p["matchupId"] in props:
-                for d in p["prices"]:
-                    props[p["matchupId"]][d["participantId"]].update(d)
+                matchup_id = p["id"]
+                option_ids = {}
 
-        return props
+                options = p["participants"]
+                for o in options:
+                    option_ids[o["id"]] = o["name"]
 
-    def _parse_description(self, desc: str) -> Tuple[str]:
-        """Parse player description into name and scoring categories.
+                bet_info["name"], bet_info["market"] = self._parse_description(
+                    p["special"]["description"]
+                )
 
-        Returns:
-            Tuple of name and category string.
-        """
-        oi = desc.find("(")
-        ci = desc.find(")")
-        if oi == -1 or ci == -1:
-            logger.warning(f'Prop description is malformed: "{desc}".')
-            return "", ""
+                teams = p["parent"]["participants"]
+                bet_info["home"] = team(teams, "home")
+                bet_info["away"] = team(teams, "away")
 
-        name = desc[:oi].strip()
-        cat = desc[oi + 1 : ci]
-        return name, cat
+                bet_options = []
+                straight_options = straight_dict[matchup_id]["prices"]
+                for id_, name in option_ids.items():
+                    match = next(
+                        s for s in straight_options if s["participantId"] == id_
+                    )
+                    bet_options.append(
+                        {
+                            "option": name,
+                            "points": match["points"],
+                            "line": match["price"],
+                        }
+                    )
+                for bo in bet_options:
+                    bets.append(Bet(**bet_info, **bo))
+            except KeyError:
+                logger.warning(
+                    f"Data for matchup with id {matchup_id} is not shaped as expected."
+                )
 
-    def prop_bets(self) -> List[Dict]:
-        """Clean props dict, return list of Bets."""
-        if not self._props_dict:
-
-            pass
+        return bets
 
 
 class Pinnacle:
