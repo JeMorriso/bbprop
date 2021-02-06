@@ -2,8 +2,16 @@ import numpy as np
 
 from bbprop.bet_utils import norm_dist, american_to_implied_prob, bet_prob, edge
 
+"""Classes for calculating a bet's value over different time ranges.
+
+The classes following BetRanges all implement the slice method which returns the game
+logs matching the time range's criteria.
+"""
+
 
 class BetRanges:
+    """Given a bet and a list of time-oriented ranges, calculate bet values."""
+
     def __init__(self, bet, game_logs, *ranges):
         self.bet = bet
         self.game_logs = game_logs
