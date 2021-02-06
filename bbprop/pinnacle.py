@@ -1,5 +1,5 @@
 import json
-from typing import List, Dict, Tuple
+from typing import Dict, Tuple
 import logging
 
 from seleniumwire import webdriver
@@ -24,7 +24,7 @@ class PinnacleGame:
         self.props = []
 
         if clean:
-            self._props_dict = self._build_props()
+            # self._props_dict = self._build_props()
             self.props = self.prop_bets()
 
     def _parse_description(self, desc: str) -> Tuple[str]:
@@ -34,15 +34,15 @@ class PinnacleGame:
             Tuple of name and category string.
         """
         translations = {
-            "points": ("pts",),
-            "assists": ("ast",),
-            "turnovers": ("tov",),
-            "3 point fg": ("fg3m",),
-            "rebounds": ("reb",),
-            "blocks": ("blk",),
-            "pts+rebs+asts": ("pts", "reb", "ast"),
-            "steals+blocks": ("stl", "blk"),
-            "double+double": ("dd2"),
+            "points": ("PTS",),
+            "assists": ("AST",),
+            "turnovers": ("TOV",),
+            "3 point fg": ("FG3M",),
+            "rebounds": ("REB",),
+            "blocks": ("BLK",),
+            "pts+rebs+asts": ("PTS", "REB", "AST"),
+            "steals+blocks": ("STL", "BLK"),
+            "double+double": ("DD2",),
         }
 
         oi = desc.find("(")
