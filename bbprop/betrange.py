@@ -43,13 +43,23 @@ class BetRanges:
         return bets
 
 
+def slice_last_n(df, n):
+    return df.sort_values(
+        by="GAME_DATE",
+        ascending=False,
+    )[:n]
+
+
+def slice_season(df, season):
+    return df[df["SEASON_YEAR"] == season]
+
+
 class Last3:
     def __str__(self):
         return "last 3"
 
     def slice(self, df):
-        return df
-        pass
+        return slice_last_n(df, 3)
 
 
 class Last10:
@@ -57,8 +67,7 @@ class Last10:
         return "last 10"
 
     def slice(self, df):
-        return df
-        pass
+        return slice_last_n(df, 10)
 
 
 class Last5:
@@ -66,8 +75,7 @@ class Last5:
         return "last 5"
 
     def slice(self, df):
-        return df
-        pass
+        return slice_last_n(df, 5)
 
 
 class Season:
@@ -75,5 +83,4 @@ class Season:
         return "season"
 
     def slice(self, df):
-        return df
-        pass
+        return slice_season(df, "2020-21")
