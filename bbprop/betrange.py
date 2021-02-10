@@ -36,6 +36,12 @@ class BetRanges:
                 }
             )
 
+    def to_list(self):
+        bets = []
+        for v in self.values:
+            bets.append({**vars(self.bet), **v})
+        return bets
+
 
 class Last3:
     def __str__(self):

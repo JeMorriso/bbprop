@@ -1,10 +1,12 @@
 import time
 
+import pandas as pd
+
 from bbprop.betrange import BetRanges
 
 
 class TestPinnacle:
-    def test_game_id(testpinnacle):
+    def test_game_id(self, testpinnacle):
         id_ = 1249774441
         url1 = "https://www.pinnacle.com/en/basketball/nba/detroit-pistons-vs-cleveland-cavaliers/1249774441"
         url2 = "https://www.pinnacle.com/en/basketball/nba/detroit-pistons-vs-cleveland-cavaliers/1249774441/"
@@ -22,7 +24,7 @@ class TestPinnacle:
 
 
 class TestPinnacleGame:
-    def test_prop_bets(pinnaclegame):
+    def test_prop_bets(self, pinnaclegame):
         pinnaclegame.prop_bets()
 
 
@@ -55,4 +57,19 @@ class TestBetRanges:
             br = BetRanges(b, gamelogs[b.name], last3, last5, last10, season)
             br.calc_values()
             bet_values.append(br)
+        assert True
+
+    def test_to_list(self, pinnaclegame, gamelogs, last3, last5, last10, season):
+        bets = pinnaclegame.prop_bets()
+        bet_values = []
+        for b in bets:
+            br = BetRanges(b, gamelogs[b.name], last3, last5, last10, season)
+            br.calc_values()
+            bet_values.append(br)
+
+        bv_list = []
+        for br in bet_values:
+            bv_list.extend(br.to_list())
+
+        df = pd.DataFrame(bv_list)
         assert True

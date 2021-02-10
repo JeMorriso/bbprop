@@ -5,13 +5,12 @@ import pytest
 import pandas as pd
 from seleniumwire import webdriver
 
-from bbprop.pinnaclenba import PinnacleNBA
 from bbprop.pinnacle import Pinnacle, PinnacleGame
 from bbprop.sportapi import NBA
 from bbprop.betrange import Last10, Last3, Last5, Season
 
 
-class TestPinnacle(Pinnacle):
+class TestPinnacleFixture(Pinnacle):
     def __init__(self):
         super().__init__()
 
@@ -20,13 +19,8 @@ class TestPinnacle(Pinnacle):
 
 @pytest.fixture
 def testpinnacle():
-    with TestPinnacle() as tp:
+    with TestPinnacleFixture() as tp:
         yield tp
-
-
-@pytest.fixture
-def pinnaclenba():
-    return PinnacleNBA()
 
 
 @pytest.fixture
