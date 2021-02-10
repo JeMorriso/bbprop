@@ -1,6 +1,7 @@
 import time
 
 import pandas as pd
+import pytest
 
 from bbprop.betrange import BetRanges
 
@@ -24,8 +25,12 @@ class TestPinnacle:
 
 
 class TestPinnacleGame:
-    def test_prop_bets(self, pinnaclegame):
-        pinnaclegame.prop_bets()
+    @pytest.mark.parametrize(
+        "pin",
+        [(pytest.lazy_fixture("pinnaclegame")), (pytest.lazy_fixture("pinnaclegame2"))],
+    )
+    def test_prop_bets(self, pin):
+        pin.prop_bets()
 
 
 class TestNBA:
@@ -38,38 +43,58 @@ class TestNBA:
                 assert "full_name" in p
             time.sleep(3)
 
-    def test_season_game_log(self, pinnaclegame, nba):
-        for prop in pinnaclegame.prop_bets():
-            ids = {}
+    @pytest.mark.parametrize(
+        "pin",
+        [(pytest.lazy_fixture("pinnaclegame")), (pytest.lazy_fixture("pinnaclegame2"))],
+    )
+    def test_season_game_log(self, pin, nba):
+        ids = {}
+        for prop in pin.prop_bets():
+            if "washington" in prop.name.lower():
+                assert True
+                pass
             if prop.name not in ids:
-                ids[prop.name] = nba.player_by_name(prop.name)
-                glg = nba.season_game_log(ids[prop.name]["id"], "2020-21")
-                glg.to_csv(f"tests/csv/{prop.name} 2020-21.csv")
-
+                try:
+                    ids[prop.name] = nba.player_by_name(prop.name)
+                    glg = nba.season_game_log(ids[prop.name]["id"], "2020-21")
+                    glg.to_csv(f"tests/csv/{prop.name} 2020-21.csv")
+                except KeyError:
+                    pass
                 time.sleep(3)
 
 
 class TestBetRanges:
-    def test_calc_values(self, pinnaclegame, gamelogs, last3, last5, last10, season):
-        bets = pinnaclegame.prop_bets()
+    @pytest.mark.parametrize(
+        "pin",
+        [(pytest.lazy_fixture("pinnaclegame")), (pytest.lazy_fixture("pinnaclegame2"))],
+    )
+    def test_calc_values(self, pin, gamelogs, last3, last5, last10, season):
+        bets = pin.prop_bets()
         bet_values = []
         for b in bets:
             br = BetRanges(b, gamelogs[b.name], last3, last5, last10, season)
             br.calc_values()
             bet_values.append(br)
-        assert True
+        assert len(bet_values) > 0
 
-    def test_to_list(self, pinnaclegame, gamelogs, last3, last5, last10, season):
-        bets = pinnaclegame.prop_bets()
+    @pytest.mark.parametrize(
+        "pin",
+        [(pytest.lazy_fixture("pinnaclegame")), (pytest.lazy_fixture("pinnaclegame2"))],
+    )
+    def test_to_list(self, pin, gamelogs, last3, last5, last10, season):
+        bets = pin.prop_bets()
         bet_values = []
         for b in bets:
-            br = BetRanges(b, gamelogs[b.name], last3, last5, last10, season)
-            br.calc_values()
-            bet_values.append(br)
+            try:
+                br = BetRanges(b, gamelogs[b.name], last3, last5, last10, season)
+                br.calc_values()
+                bet_values.append(br)
+            except KeyError:
+                continue
 
         bv_list = []
         for br in bet_values:
             bv_list.extend(br.to_list())
 
         df = pd.DataFrame(bv_list)
-        assert True
+        assert len(df) > 0

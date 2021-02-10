@@ -1,0 +1,6790 @@
+[
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": true,
+    "hasAltTotal": true,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1259423843,
+    "isBetshareEnabled": false,
+    "isHighlighted": true,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": null,
+    "parentId": null,
+    "parlayRestriction": "allowed",
+    "participants": [
+      {
+        "alignment": "home",
+        "name": "Dallas Mavericks",
+        "order": 1
+      },
+      {
+        "alignment": "away",
+        "name": "Atlanta Hawks",
+        "order": 0
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "hasMoneyline": true,
+        "hasSpread": true,
+        "hasTeamTotal": true,
+        "hasTotal": true,
+        "period": 0,
+        "status": "open"
+      },
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "hasMoneyline": true,
+        "hasSpread": true,
+        "hasTeamTotal": true,
+        "hasTotal": true,
+        "period": 1,
+        "status": "open"
+      },
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "hasMoneyline": true,
+        "hasSpread": true,
+        "hasTeamTotal": true,
+        "hasTotal": true,
+        "period": 3,
+        "status": "open"
+      }
+    ],
+    "rotation": 519,
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 87,
+    "type": "matchup",
+    "units": "Regular",
+    "version": 305300853
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459690,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459691,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459692,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Luka Doncic (Points)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 33,
+    "type": "special",
+    "units": "Points",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459695,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459696,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459697,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Luka Doncic (Assists)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 35,
+    "type": "special",
+    "units": "Assists",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459699,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459701,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459702,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Luka Doncic (Turnovers)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 44,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459708,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459709,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459710,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Luka Doncic (Rebounds)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 59,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459715,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459716,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459717,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Luka Doncic (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 67,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459720,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459721,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459722,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Luka Doncic (Double+Double)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 46,
+    "type": "special",
+    "units": "DoubleDouble",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459727,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459728,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459729,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Luka Doncic (Triple+Double)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 50,
+    "type": "special",
+    "units": "TripleDouble",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459730,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459731,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459732,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Clint Capela (Double+Double)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 22,
+    "type": "special",
+    "units": "DoubleDouble",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459820,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459822,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459823,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "John Collins (Points)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 43,
+    "type": "special",
+    "units": "Points",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459825,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459826,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459827,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "John Collins (Turnovers)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 32,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459831,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459832,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459833,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "John Collins (3 Point FG)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 64,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459835,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459836,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459837,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "John Collins (Rebounds)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 40,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459839,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459840,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459841,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "John Collins (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 42,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459844,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459845,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459846,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "John Collins (Double+Double)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 27,
+    "type": "special",
+    "units": "DoubleDouble",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459852,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459853,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459854,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "John Collins (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 49,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459871,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459872,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459873,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kevin Huerter (Points)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 57,
+    "type": "special",
+    "units": "Points",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459876,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459877,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459878,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kevin Huerter (Assists)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 54,
+    "type": "special",
+    "units": "Assists",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459879,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459880,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459881,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kevin Huerter (Turnovers)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 64,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459882,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459883,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459884,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kevin Huerter (3 Point FG)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 66,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459890,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459891,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459892,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kevin Huerter (Rebounds)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 36,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459894,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459895,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459896,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kevin Huerter (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 53,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459900,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459901,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459902,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kevin Huerter (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 54,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459929,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459931,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459932,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Clint Capela (Points)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 45,
+    "type": "special",
+    "units": "Points",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459934,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459936,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459937,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Clint Capela (Turnovers)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 27,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459940,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459941,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459942,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Clint Capela (Rebounds)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 63,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459948,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459949,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459950,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Clint Capela (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 58,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459954,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459955,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459956,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Clint Capela (Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 26,
+    "type": "special",
+    "units": "Blocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459957,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459958,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459959,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Clint Capela (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 63,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459995,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260459996,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260459997,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Trae Young (Points)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 34,
+    "type": "special",
+    "units": "Points",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260459999,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460000,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460001,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Trae Young (Assists)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 60,
+    "type": "special",
+    "units": "Assists",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460002,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460003,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460004,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Trae Young (Turnovers)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 68,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460009,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460010,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460011,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Trae Young (3 Point FG)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 52,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460021,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460022,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460023,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Trae Young (Rebounds)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 55,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460025,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460026,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460027,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Trae Young (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 37,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460032,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460033,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460034,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Trae Young (Double+Double)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 51,
+    "type": "special",
+    "units": "DoubleDouble",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460039,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460040,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460041,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Trae Young (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 47,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460102,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460103,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460104,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Cam Reddish (Points)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 38,
+    "type": "special",
+    "units": "Points",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460108,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460109,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460110,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Cam Reddish (Turnovers)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 48,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460113,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460114,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460115,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Cam Reddish (3 Point FG)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 31,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460119,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460120,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460121,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Cam Reddish (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 56,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460124,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460125,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460126,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Cam Reddish (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 57,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460691,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460692,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460693,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kristaps Porzingis (Points)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 65,
+    "type": "special",
+    "units": "Points",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460696,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460697,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460698,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kristaps Porzingis (Turnovers)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 39,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460700,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460701,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460702,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kristaps Porzingis (3 Point FG)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 62,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460704,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460705,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460706,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kristaps Porzingis (Rebounds)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 39,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460708,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460709,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460710,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kristaps Porzingis (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 30,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460716,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460717,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460718,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kristaps Porzingis (Double+Double)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 41,
+    "type": "special",
+    "units": "DoubleDouble",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460720,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460721,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460722,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kristaps Porzingis (Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 29,
+    "type": "special",
+    "units": "Blocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460724,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460725,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460726,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Kristaps Porzingis (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 61,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460867,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460868,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460869,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Cam Reddish (Rebounds)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 25,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460871,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460872,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460873,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "John Collins (Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 78,
+    "type": "special",
+    "units": "Blocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460900,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460901,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460902,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Dorian Finney-Smith (Points)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 79,
+    "type": "special",
+    "units": "Points",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460904,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460905,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460906,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Dorian Finney-Smith (3 Point FG)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 76,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460911,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460912,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460913,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Dorian Finney-Smith (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 78,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260460915,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260460916,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260460917,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Dorian Finney-Smith (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 77,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461055,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461057,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461058,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Dorian Finney-Smith (Rebounds)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 75,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461061,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461062,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461063,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Dorian Finney-Smith (Turnovers)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 85,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461064,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461065,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461066,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Josh Richardson (Points)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 87,
+    "type": "special",
+    "units": "Points",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461069,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461070,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461071,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Josh Richardson (Assists)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 28,
+    "type": "special",
+    "units": "Assists",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461075,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461076,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461077,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Josh Richardson (Turnovers)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 86,
+    "type": "special",
+    "units": "TurnOvers",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461078,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461079,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461080,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Josh Richardson (3 Point FG)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 84,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461081,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461082,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461083,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Josh Richardson (Rebounds)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 83,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461089,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461090,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461091,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Josh Richardson (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 71,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461097,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461099,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461100,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Josh Richardson (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 72,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461420,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461421,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461422,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Maxi Kleber (3 Point FG)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 74,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461425,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461426,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461427,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Maxi Kleber (Rebounds)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 73,
+    "type": "special",
+    "units": "Rebounds",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461433,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461434,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461435,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Maxi Kleber (Pts+Rebs+Asts)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 70,
+    "type": "special",
+    "units": "PointsReboundsAssist",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461436,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461437,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461438,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Maxi Kleber (Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 69,
+    "type": "special",
+    "units": "Blocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260461441,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260461442,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260461443,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Maxi Kleber (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 80,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260465836,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260465839,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260465840,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Maxi Kleber (Points)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 82,
+    "type": "special",
+    "units": "Points",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260472896,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260472897,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260472898,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Luka Doncic (3 Point FG)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 81,
+    "type": "special",
+    "units": "ThreePointFieldGoals",
+    "version": 98220300
+  },
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "external": {},
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasLive": true,
+    "hasMarkets": true,
+    "id": 1260472899,
+    "isBetshareEnabled": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "external": {},
+      "featureOrder": 1,
+      "group": "USA",
+      "id": 487,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 4,
+      "matchupCountSE": 4,
+      "name": "NBA",
+      "sport": {
+        "featureOrder": 5,
+        "id": 4,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 96,
+        "matchupCountSE": 86,
+        "name": "Basketball",
+        "primaryMarketType": "spread"
+      }
+    },
+    "liveMode": null,
+    "parent": {
+      "id": 1259423843,
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Dallas Mavericks",
+          "score": null
+        },
+        {
+          "alignment": "away",
+          "name": "Atlanta Hawks",
+          "score": null
+        }
+      ],
+      "startTime": "2021-02-11T00:40:00+00:00"
+    },
+    "parentId": 1259423843,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1260472900,
+        "name": "Over",
+        "order": 0,
+        "rotation": 520
+      },
+      {
+        "alignment": "neutral",
+        "id": 1260472901,
+        "name": "Under",
+        "order": 0,
+        "rotation": 521
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2021-02-11T00:40:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 520,
+    "special": {
+      "category": "Player Props",
+      "description": "Luka Doncic (Steals+Blocks)(must start)"
+    },
+    "startTime": "2021-02-11T00:40:00Z",
+    "state": {},
+    "status": "pending",
+    "totalMarketCount": 81,
+    "type": "special",
+    "units": "StealsBlocks",
+    "version": 98220300
+  }
+]

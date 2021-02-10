@@ -36,8 +36,25 @@ def related():
 
 
 @pytest.fixture
+def homepage_straight():
+    with open("tests/json/nba-homepage-straight.json", "r") as f:
+        return json.load(f)
+
+
+@pytest.fixture
+def homepage_matchups():
+    with open("tests/json/nba-homepage-matchups.json", "r") as f:
+        return json.load(f)
+
+
+@pytest.fixture
 def pinnaclegame(straight, related):
     return PinnacleGame(straight, related, False)
+
+
+@pytest.fixture
+def pinnaclegame2(homepage_straight, homepage_matchups):
+    return PinnacleGame(homepage_straight, homepage_matchups, False)
 
 
 @pytest.fixture
