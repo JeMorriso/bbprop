@@ -40,7 +40,7 @@ def american_to_implied_prob(line):
 
 
 def bet_prob(dist, points, option):
-    if option == "under":
+    if option == "Under":
         return dist.cdf(points)
     else:
         return 1 - dist.cdf(points)
