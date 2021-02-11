@@ -107,3 +107,16 @@ class TestBetRanges:
 
 def test_driver_local(localstorage):
     driver(localstorage)
+
+
+def test_s3_storage_write(localstorage, s3storage):
+    df = localstorage.csv_to_dataframe(
+        f"{localstorage.game_log_dir}/Andre Drummond.csv"
+    )
+
+    s3storage.dataframe_to_csv(df, "Andre Drummond.csv")
+
+
+def test_s3_storage_read(s3storage):
+    df = s3storage.csv_to_dataframe("Andre Drummond.csv")
+    assert len(df) > 0
