@@ -4,6 +4,7 @@ import pandas as pd
 import pytest
 
 from bbprop.betrange import BetRanges
+from pinnacle_driver import driver
 
 
 class TestPinnacle:
@@ -22,6 +23,10 @@ class TestPinnacle:
     #         url="https://www.pinnacle.com/en/basketball/nba/detroit-pistons-vs-cleveland-cavaliers/1249774441"
     #     )
     #     print(data)
+
+    def test_league(self, testpinnacle):
+        pg = testpinnacle.league()
+        assert len(pg.props) > 0
 
 
 class TestPinnacleGame:
@@ -57,7 +62,7 @@ class TestNBA:
                 try:
                     ids[prop.name] = nba.player_by_name(prop.name)
                     glg = nba.season_game_log(ids[prop.name]["id"], "2020-21")
-                    glg.to_csv(f"tests/csv/{prop.name} 2020-21.csv")
+                    glg.to_csv(f"tests/csv/game-logs/{prop.name}.csv")
                 except KeyError:
                     pass
                 time.sleep(3)
@@ -98,3 +103,7 @@ class TestBetRanges:
 
         df = pd.DataFrame(bv_list)
         assert len(df) > 0
+
+
+def test_driver_local(localstorage):
+    driver(localstorage)

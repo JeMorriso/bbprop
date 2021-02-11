@@ -1,13 +1,16 @@
 import json
 from pathlib import Path
+import os
 
 import pytest
 import pandas as pd
 from seleniumwire import webdriver
+import boto3
 
 from bbprop.pinnacle import Pinnacle, PinnacleGame
 from bbprop.sportapi import NBA
 from bbprop.betrange import Last10, Last3, Last5, Season
+from bbprop.storage import LocalStorage, S3Storage
 
 
 class TestPinnacleFixture(Pinnacle):
@@ -96,3 +99,16 @@ def gamelogs():
             p_name = " ".join(str(fp).split()[:2]).split("/")[-1]
             dfs[p_name] = pd.read_csv(f)
     return dfs
+
+
+@pytest.fixture
+def localstorage():
+    return LocalStorage("tests/csv")
+
+
+@pytest.fixture
+def s3storage():
+    return S3Storage(
+        session=boto3.session.Session(profile_name="default"),
+        bucket=os.getenv("S3_BUCKET"),
+    )
