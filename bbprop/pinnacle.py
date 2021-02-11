@@ -43,6 +43,7 @@ class PinnacleGame:
             "pts+rebs+asts": ("PTS", "REB", "AST"),
             "steals+blocks": ("STL", "BLK"),
             "double+double": ("DD2",),
+            "triple+double": ("TD3",),
         }
 
         oi = desc.find("(")
@@ -80,6 +81,8 @@ class PinnacleGame:
                 if part["alignment"] == alignment
             )
 
+        logger.info("Getting prop bets...")
+
         # Filter out prop bets.
         related = list(filter(prop_filter, self.related))
         straight_dict = {s["matchupId"]: s for s in self.straight}
@@ -88,6 +91,8 @@ class PinnacleGame:
         bets = []
         for p in related:
             try:
+                matchup_id = None
+
                 bet_info = {"sportsbook": "Pinnacle"}
 
                 matchup_id = p["id"]
@@ -120,7 +125,8 @@ class PinnacleGame:
                     )
                 for bo in bet_options:
                     bets.append(Bet(**bet_info, **bo))
-            except KeyError:
+            except (KeyError, TypeError):
+                # Got TypeError one time in testing but not sure how.
                 logger.warning(
                     f"Data for matchup with id {matchup_id} is not shaped as expected."
                 )
@@ -187,6 +193,8 @@ class Pinnacle:
         """
         del self.driver.requests
 
+        logger.info("Intercepting game response files...")
+
         if url is not None:
             self.driver.get(url)
         elif click_el is not None:
@@ -196,6 +204,22 @@ class Pinnacle:
         game_id = self._game_id(curr)
         straight = f"guest.api.arcadia.pinnacle.com/0.1/matchups/{game_id}/markets/related/straight"
         related = f"guest.api.arcadia.pinnacle.com/0.1/matchups/{game_id}/related"
+
+        data = []
+        for r in [straight, related]:
+            match = self._find_request(r)
+            data.append(json.loads(match.response.body))
+
+        return PinnacleGame(*data)
+
+    def league(self):
+        del self.driver.requests
+        self.driver.get(self.base_url)
+
+        logger.info("Intercepting league response files...")
+
+        related = "guest.api.arcadia.pinnacle.com/0.1/leagues/487/matchups"
+        straight = "guest.api.arcadia.pinnacle.com/0.1/leagues/487/markets/straight"
 
         data = []
         for r in [straight, related]:
