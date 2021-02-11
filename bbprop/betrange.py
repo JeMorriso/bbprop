@@ -2,11 +2,22 @@ import numpy as np
 
 from bbprop.bet_utils import norm_dist, american_to_implied_prob, bet_prob, edge
 
-"""Classes for calculating a bet's value over different time ranges.
+"""Classes, functions for calculating a bet's value over different time ranges.
 
 The classes following BetRanges all implement the slice method which returns the game
 logs matching the time range's criteria.
 """
+
+
+def slice_last_n(df, n):
+    return df.sort_values(
+        by="GAME_DATE",
+        ascending=False,
+    )[:n]
+
+
+def slice_season(df, season):
+    return df[df["SEASON_YEAR"] == season]
 
 
 class BetRanges:
@@ -41,17 +52,6 @@ class BetRanges:
         for v in self.values:
             bets.append({**vars(self.bet), **v})
         return bets
-
-
-def slice_last_n(df, n):
-    return df.sort_values(
-        by="GAME_DATE",
-        ascending=False,
-    )[:n]
-
-
-def slice_season(df, season):
-    return df[df["SEASON_YEAR"] == season]
 
 
 class Last3:
