@@ -120,3 +120,13 @@ def test_s3_storage_write(localstorage, s3storage):
 def test_s3_storage_read(s3storage):
     df = s3storage.csv_to_dataframe("Andre Drummond.csv")
     assert len(df) > 0
+
+
+# See Pytest Flask docs about client - it's from Flask
+def test_local_flask_app(client, accept_json, app):
+    res = client.get("/selenium", headers=accept_json)
+    assert len(res.json) > 0
+
+
+def test_docker_flask_app(client, accept_json):
+    pass

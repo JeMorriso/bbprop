@@ -10,6 +10,12 @@ from bbprop.pinnacle import Pinnacle, PinnacleGame
 from bbprop.sportapi import NBA
 from bbprop.betrange import Last10, Last3, Last5, Season
 from bbprop.storage import LocalStorage, S3Storage
+from bbprop_api.cloud_run.app import create_app
+
+
+@pytest.fixture
+def app():
+    return create_app(["--disable-gpu", "--no-sandbox", "window-size=1024,768"])
 
 
 @pytest.fixture
@@ -85,10 +91,11 @@ def season():
 @pytest.fixture
 def gamelogs():
     dfs = {}
-    p = Path("tests/csv")
+    p = Path("tests/csv/game-logs")
     for fp in p.iterdir():
         with open(fp, "r") as f:
-            p_name = " ".join(str(fp).split()[:2]).split("/")[-1]
+            # p_name = " ".join(str(fp).split()[:2]).split("/")[-1]
+            p_name = str(fp).split("/")[-1].split(".")[0]
             dfs[p_name] = pd.read_csv(f)
     return dfs
 
