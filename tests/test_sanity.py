@@ -2,6 +2,7 @@ import time
 
 import pandas as pd
 import pytest
+import requests
 
 from bbprop.betrange import BetRanges
 from pinnacle_driver import driver
@@ -128,5 +129,7 @@ def test_local_flask_app(client, accept_json, app):
     assert len(res.json) > 0
 
 
-def test_docker_flask_app(client, accept_json):
-    pass
+def test_docker_flask_app():
+    # Docker container must be running locally
+    res = requests.get("http://localhost:8080/selenium")
+    assert len(res.json()) > 0
