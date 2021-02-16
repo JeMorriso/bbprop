@@ -13,14 +13,16 @@ RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.d
 RUN dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install
 
 # Install Python dependencies.
-COPY bbprop_api/cloud_run/requirements.txt requirements.txt
+# COPY bbprop_api/cloud_run/requirements.txt requirements.txt
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 # Copy local code to the container image.
 ENV APP_HOME /app
 WORKDIR $APP_HOME
 # Copy contents of cloud run directory
-ADD bbprop_api/cloud_run/ .
+# ADD bbprop_api/cloud_run/ .
+ADD . .
 
 # Copy bbprop module to $APP_HOME/bbprop
 COPY bbprop ./bbprop
