@@ -135,11 +135,12 @@ class PinnacleGame:
 
 
 class Pinnacle:
-    def __init__(self):
+    def __init__(self, *args):
         self.base_url = "https://www.pinnacle.com/en/basketball/nba/matchups"
 
         opts = webdriver.ChromeOptions()
-        opts.add_argument("--headless")
+        for a in args:
+            opts.add_argument(a)
 
         self._props_dict = {}
         self.driver = webdriver.Chrome(options=opts)

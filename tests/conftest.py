@@ -4,7 +4,6 @@ import os
 
 import pytest
 import pandas as pd
-from seleniumwire import webdriver
 import boto3
 
 from bbprop.pinnacle import Pinnacle, PinnacleGame
@@ -13,16 +12,9 @@ from bbprop.betrange import Last10, Last3, Last5, Season
 from bbprop.storage import LocalStorage, S3Storage
 
 
-class TestPinnacleFixture(Pinnacle):
-    def __init__(self):
-        super().__init__()
-
-        self.driver = webdriver.Chrome()
-
-
 @pytest.fixture
 def testpinnacle():
-    with TestPinnacleFixture() as tp:
+    with Pinnacle() as tp:
         yield tp
 
 
