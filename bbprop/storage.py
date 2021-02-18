@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from io import StringIO
 from pathlib import Path
+import re
 
 import pandas as pd
 
@@ -31,9 +32,9 @@ class LocalStorage(Storage):
     def csv_to_dataframe(self, path):
         return pd.read_csv(path)
 
-    def csv_dict(self):
+    def player_names(self):
         csvs = [p for p in Path(self.game_log_dir).iterdir() if p.is_file()]
-        return {csv.name.replace(".csv", ""): csv for csv in csvs}
+        return [csv.name.replace(".csv", "") for csv in csvs]
 
 
 class S3Storage(Storage):
@@ -58,6 +59,12 @@ class S3Storage(Storage):
 
         return pd.read_csv(StringIO(csv_str))
 
-    def csv_dict(self):
-        csvs = [p for p in Path(self.game_log_dir).iterdir() if p.is_file()]
-        return {csv.name.replace(".csv", ""): csv for csv in csvs}
+    def player_names(self):
+        prefix = f"{self.game_log_dir}/"
+        objects = self.s3.list_objects_v2(Bucket=self.bucket, Prefix=prefix)
+        keys = [f["Key"] for f in objects["Contents"]]
+        # Remove the matching directory, Prefix doesn't support regex.
+        paths = [k for k in keys if re.match(fr"{prefix}.+", k)]
+        files = [re.sub(fr"^{prefix}", "", f) for f in paths]
+        players = [re.sub(r"\.csv$", "", f) for f in files]
+        return players
