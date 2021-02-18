@@ -2,10 +2,8 @@ import time
 
 import pandas as pd
 import pytest
-import requests
 
 from bbprop.betrange import BetRanges
-from pinnacle_driver import driver
 
 
 class TestPinnacle:
@@ -106,30 +104,18 @@ class TestBetRanges:
         assert len(df) > 0
 
 
-def test_driver_local(localstorage):
-    driver(localstorage)
+class TestStorage:
+    def test_s3storage_write(self, localstorage, s3storage):
+        df = localstorage.csv_to_dataframe(
+            f"{localstorage.game_log_dir}/Andre Drummond.csv"
+        )
 
+        s3storage.dataframe_to_csv(df, "Andre Drummond.csv")
 
-def test_s3_storage_write(localstorage, s3storage):
-    df = localstorage.csv_to_dataframe(
-        f"{localstorage.game_log_dir}/Andre Drummond.csv"
-    )
+    def test_s3storage_read(self, s3storage):
+        df = s3storage.csv_to_dataframe("Andre Drummond.csv")
+        assert len(df) > 0
 
-    s3storage.dataframe_to_csv(df, "Andre Drummond.csv")
-
-
-def test_s3_storage_read(s3storage):
-    df = s3storage.csv_to_dataframe("Andre Drummond.csv")
-    assert len(df) > 0
-
-
-# See Pytest Flask docs about client - it's from Flask
-def test_local_flask_app(client, accept_json, app):
-    res = client.get("/selenium", headers=accept_json)
-    assert len(res.json) > 0
-
-
-def test_docker_flask_app():
-    # Docker container must be running locally
-    res = requests.get("http://localhost:8080/selenium")
-    assert len(res.json()) > 0
+    def test_s3storage_player_names(self, s3storage):
+        s3storage.player_names()
+        pass

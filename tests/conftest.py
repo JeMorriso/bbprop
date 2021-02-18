@@ -108,6 +108,10 @@ def localstorage():
 @pytest.fixture
 def s3storage():
     return S3Storage(
-        session=boto3.session.Session(profile_name="default"),
+        # session=boto3.session.Session(profile_name="default"),
+        session=boto3.session.Session(
+            aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"),
+            aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
+        ),
         bucket=os.getenv("S3_BUCKET"),
     )
