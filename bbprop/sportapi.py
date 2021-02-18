@@ -1,4 +1,8 @@
 import logging
+import time
+import functools
+
+from requests.exceptions import ReadTimeout
 
 from nba_api.stats.static import players
 from nba_api.stats.endpoints import PlayerGameLogs
@@ -16,6 +20,23 @@ class NBA:
     def __init__(self):
         pass
 
+    def timeout_retry(timeout):
+        def timeout_args_wrapper(fn):
+            @functools.wraps(fn)
+            def wrapper(*args):
+                while True:
+                    try:
+                        time.sleep(1)
+                        return fn(*args)
+                    except ReadTimeout:
+                        time.sleep(timeout)
+
+            return wrapper
+
+        return timeout_args_wrapper
+
+    # player_by_name = timeout_retry(10)(player_by_name)
+    @timeout_retry(10)
     def player_by_name(self, name):
         ps = players.find_players_by_full_name(name)
         if len(ps) == 0:
@@ -27,6 +48,7 @@ class NBA:
         else:
             return ps[0]
 
+    @timeout_retry(10)
     def season_game_log(self, player_id, season):
         # season or date range...
         try:
@@ -37,4 +59,11 @@ class NBA:
             logger.warning(
                 f"Player with id {player_id} has no game logs for season {season}."
             )
+            return pd.DataFrame()
+
+    def season_game_log_by_name(self, name, season):
+        player = self.player_by_name(name)
+        if player:
+            return self.season_game_log(player["id"], season)
+        else:
             return pd.DataFrame()
