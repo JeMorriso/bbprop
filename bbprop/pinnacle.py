@@ -67,6 +67,7 @@ class PinnacleGame:
         Return:
             Prop bet information merged into one dictionary.
         """
+        pass
 
         def prop_filter(d):
             try:
@@ -81,50 +82,73 @@ class PinnacleGame:
                 if part["alignment"] == alignment
             )
 
+        def parse_related_prop(p):
+            """Parse out relevant bet information from the 'related' dictionary."""
+            bet_info = {"sportsbook": "Pinnacle"}
+
+            matchup_id = p["id"]
+            option_ids = {}
+
+            options = p["participants"]
+            for o in options:
+                option_ids[o["id"]] = o["name"]
+
+            bet_info["name"], bet_info["market"] = self._parse_description(
+                p["special"]["description"]
+            )
+            teams = p["parent"]["participants"]
+            bet_info["home"] = team(teams, "home")
+            bet_info["away"] = team(teams, "away")
+
+            return bet_info, matchup_id, option_ids
+
+        def parse_straight_prop(straight_dict, option_ids):
+            """Parse info from 'straight' dictionary"""
+
+            def try_add_bet_option(straight_options, id_, name):
+                """Add bet options that have points and line available."""
+                try:
+                    # Throws StopIteration if no match.
+                    match = next(
+                        s for s in straight_options if s["participantId"] == id_
+                    )
+                    return {
+                        "option": name,
+                        "points": match["points"],
+                        "line": match["price"],
+                    }
+
+                except StopIteration:
+                    # The bet does not have a line yet.
+                    logger.warning(
+                        f"Bet ID {id_} with name '{name}' has no available line."
+                    )
+                    return {}
+
+            bet_options = []
+            straight_options = straight_dict[matchup_id]["prices"]
+            for id_, name in option_ids.items():
+                bo = try_add_bet_option(straight_options, id_, name)
+                if bo:
+                    bet_options.append(bo)
+            return bet_options
+
         logger.info("Getting prop bets...")
 
         # Filter out prop bets.
         related = list(filter(prop_filter, self.related))
         straight_dict = {s["matchupId"]: s for s in self.straight}
 
-        # Pull info from related list.
+        # Pull info from related list, using straight dict, for each prop.
         bets = []
         for p in related:
             try:
-                matchup_id = None
+                bet_info, matchup_id, option_ids = parse_related_prop(p)
+                bet_options = parse_straight_prop(straight_dict, option_ids)
 
-                bet_info = {"sportsbook": "Pinnacle"}
-
-                matchup_id = p["id"]
-                option_ids = {}
-
-                options = p["participants"]
-                for o in options:
-                    option_ids[o["id"]] = o["name"]
-
-                bet_info["name"], bet_info["market"] = self._parse_description(
-                    p["special"]["description"]
-                )
-
-                teams = p["parent"]["participants"]
-                bet_info["home"] = team(teams, "home")
-                bet_info["away"] = team(teams, "away")
-
-                bet_options = []
-                straight_options = straight_dict[matchup_id]["prices"]
-                for id_, name in option_ids.items():
-                    match = next(
-                        s for s in straight_options if s["participantId"] == id_
-                    )
-                    bet_options.append(
-                        {
-                            "option": name,
-                            "points": match["points"],
-                            "line": match["price"],
-                        }
-                    )
                 for bo in bet_options:
                     bets.append(Bet(**bet_info, **bo))
+
             except (KeyError, TypeError):
                 # Got TypeError one time in testing but not sure how.
                 logger.warning(
