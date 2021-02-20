@@ -21,14 +21,10 @@ RUN pip install -r requirements.txt
 ENV APP_HOME /app
 WORKDIR $APP_HOME
 # Copy contents of cloud run directory
-# ADD bbprop_api/cloud_run/ .
 ADD . .
-
-# Copy bbprop module to $APP_HOME/bbprop
-COPY bbprop ./bbprop
 
 # Run the web service on container startup. Here we use the gunicorn
 # webserver, with one worker process and 8 threads.
 # For environments with multiple CPU cores, increase the number of workers
 # # to be equal to the cores available.
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 'app:create_app()'
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 'app:create_app()'

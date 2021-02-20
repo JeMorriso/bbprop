@@ -9,8 +9,7 @@
 ENV=$1
 
 cp -r ../../bbprop .
-
-# sleep 3
+cp -r ../../nba_api .
 
 if [ "$ENV" == "local" ]
 then
@@ -25,3 +24,4 @@ else
 fi
 
 rm -r bbprop
+rm -r nba_api

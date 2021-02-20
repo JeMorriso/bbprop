@@ -47,7 +47,7 @@ def create_app(
     @app.route("/test-nba-season-game-log-by-name")
     def quux():
         nba = NBA()
-        df = nba.season_game_log_by_name("Bradley Beal")
+        df = nba.season_game_log_by_name("Bradley Beal", "2020-21")
         return jsonify(df.to_json(orient="records"))
 
     @app.route("/test-s3-dataframe-to-csv")

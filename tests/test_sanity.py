@@ -113,7 +113,7 @@ class TestStorage:
         s3storage.dataframe_to_csv(df, "Andre Drummond.csv")
 
     def test_s3storage_read(self, s3storage):
-        df = s3storage.csv_to_dataframe("Andre Drummond.csv")
+        df = s3storage.csv_to_dataframe("game-logs/Andre Drummond.csv")
         assert len(df) > 0
 
     def test_s3storage_player_names(self, s3storage):

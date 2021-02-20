@@ -36,7 +36,7 @@ class NBA:
         return timeout_args_wrapper
 
     # player_by_name = timeout_retry(10)(player_by_name)
-    @timeout_retry(10)
+    # @timeout_retry(10)
     def player_by_name(self, name):
         ps = players.find_players_by_full_name(name)
         if len(ps) == 0:
@@ -48,7 +48,7 @@ class NBA:
         else:
             return ps[0]
 
-    @timeout_retry(10)
+    # @timeout_retry(10)
     def season_game_log(self, player_id, season):
         # season or date range...
         try:

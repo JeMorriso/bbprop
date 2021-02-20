@@ -205,7 +205,7 @@ class Pinnacle:
             del self.driver.requests
             self.driver.get(url)
 
-        return self.driver.wait_for_request(regex, timeout=60)
+        return self.driver.wait_for_request(regex, timeout=180)
 
     def iterate_games(self, tab_fn):
         pass
