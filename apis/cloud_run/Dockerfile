@@ -20,8 +20,9 @@ RUN pip install -r requirements.txt
 # Copy local code to the container image.
 ENV APP_HOME /app
 WORKDIR $APP_HOME
-# Copy contents of cloud run directory
-ADD . .
+
+ADD app/app.py app.py
+ADD bbprop bbprop
 
 # Run the web service on container startup. Here we use the gunicorn
 # webserver, with one worker process and 8 threads.

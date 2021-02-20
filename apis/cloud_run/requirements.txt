@@ -1,9 +1,4 @@
-numpy==1.20.1
-pandas==1.2.1
-scipy==1.6.0
 selenium-wire==3.0.5
 chromedriver-binary==88.0.4324.96.0
-requests==2.25.1
-boto3==1.17.7
 Flask==1.1.2
 gunicorn==20.0.4
