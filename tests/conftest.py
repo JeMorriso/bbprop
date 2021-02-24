@@ -9,7 +9,7 @@ import boto3
 from bbprop.pinnacle import Pinnacle, PinnacleGame
 from bbprop.sportapi import NBA, BallDontLieAdapter
 from bbprop.betrange import Last10, Last3, Last5, Season
-from bbprop.storage import LocalStorage, S3Storage
+from bbprop.storage import LocalStorage, S3Storage, BallDontLieStorage
 
 # from bbprop_api.cloud_run.app import create_app
 
@@ -66,7 +66,7 @@ def nba():
 
 @pytest.fixture
 def balldontlie():
-    with open("tests/json/balldontlie_players.json", "r") as f:
+    with open("tests/json/players/balldontlie_players.json", "r") as f:
         players = json.load(f)
     return BallDontLieAdapter(players)
 
@@ -118,6 +118,17 @@ def balldontlie_gamelogs():
             p_name = str(fp).split("/")[-1].split(".")[0]
             dfs[p_name] = pd.read_csv(f)
     return dfs
+
+
+@pytest.fixture
+def balldontliestorage_local():
+    localstorage = LocalStorage("tests/json")
+    return BallDontLieStorage(localstorage)
+
+
+@pytest.fixture
+def balldontliestorage_s3(s3storage):
+    return BallDontLieStorage(s3storage)
 
 
 @pytest.fixture

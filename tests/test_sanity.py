@@ -164,3 +164,13 @@ class TestStorage:
     def test_s3storage_player_names(self, s3storage):
         s3storage.player_names()
         pass
+
+    @pytest.mark.parametrize(
+        "bdl_store",
+        [
+            (pytest.lazy_fixture("balldontliestorage_local")),
+            (pytest.lazy_fixture("balldontliestorage_s3")),
+        ],
+    )
+    def test_balldontliestorage_players(self, bdl_store):
+        assert len(bdl_store.players()) > 0
