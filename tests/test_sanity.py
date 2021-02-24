@@ -61,29 +61,58 @@ class TestNBA:
                 try:
                     ids[prop.name] = nba.player_by_name(prop.name)
                     glg = nba.season_game_log(ids[prop.name]["id"], "2020-21")
-                    glg.to_csv(f"tests/csv/game-logs/{prop.name}.csv")
+                    glg.to_csv(f"tests/csv/nba/game-logs/{prop.name}.csv")
                 except KeyError:
                     pass
                 time.sleep(3)
 
 
-class TestBetRanges:
+class TestBallDontLieAdapter:
+    @pytest.mark.parametrize(
+        "pname, expected", [("Bradley Beal", 37), ("bradley beal", 37)]
+    )
+    def test_player_by_name(self, balldontlie, pname, expected):
+        assert balldontlie.player_by_name(pname)["id"] == expected
+
     @pytest.mark.parametrize(
         "pin",
         [(pytest.lazy_fixture("pinnaclegame")), (pytest.lazy_fixture("pinnaclegame2"))],
+    )
+    def test_season_game_log_by_name(self, pin, balldontlie):
+        # get unique players
+        players = list(set([p.name for p in pin.prop_bets()]))
+
+        for pname in players:
+            glg = balldontlie.season_game_log_by_name(pname, "2020-21")
+            if not glg.empty:
+                glg.to_csv(f"tests/csv/balldontlie/game-logs/{pname}.csv")
+
+
+class TestBetRanges:
+    @pytest.mark.parametrize(
+        "pin, gamelogs",
+        [
+            (pytest.lazy_fixture("pinnaclegame"), pytest.lazy_fixture("nba_gamelogs")),
+            (pytest.lazy_fixture("pinnaclegame2"), pytest.lazy_fixture("nba_gamelogs")),
+        ],
     )
     def test_calc_values(self, pin, gamelogs, last3, last5, last10, season):
         bets = pin.prop_bets()
         bet_values = []
         for b in bets:
+            if "washington" in b.name.lower():
+                continue
             br = BetRanges(b, gamelogs[b.name], last3, last5, last10, season)
             br.calc_values()
             bet_values.append(br)
         assert len(bet_values) > 0
 
     @pytest.mark.parametrize(
-        "pin",
-        [(pytest.lazy_fixture("pinnaclegame")), (pytest.lazy_fixture("pinnaclegame2"))],
+        "pin, gamelogs",
+        [
+            (pytest.lazy_fixture("pinnaclegame"), pytest.lazy_fixture("nba_gamelogs")),
+            (pytest.lazy_fixture("pinnaclegame2"), pytest.lazy_fixture("nba_gamelogs")),
+        ],
     )
     def test_to_list(self, pin, gamelogs, last3, last5, last10, season):
         bets = pin.prop_bets()

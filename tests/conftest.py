@@ -7,15 +7,16 @@ import pandas as pd
 import boto3
 
 from bbprop.pinnacle import Pinnacle, PinnacleGame
-from bbprop.sportapi import NBA
+from bbprop.sportapi import NBA, BallDontLieAdapter
 from bbprop.betrange import Last10, Last3, Last5, Season
 from bbprop.storage import LocalStorage, S3Storage
-from bbprop_api.cloud_run.app import create_app
+
+# from bbprop_api.cloud_run.app import create_app
 
 
-@pytest.fixture
-def app():
-    return create_app(["--disable-gpu", "--no-sandbox", "window-size=1024,768"])
+# @pytest.fixture
+# def app():
+#     return create_app(["--disable-gpu", "--no-sandbox", "window-size=1024,768"])
 
 
 @pytest.fixture
@@ -63,6 +64,13 @@ def nba():
     return NBA()
 
 
+@pytest.fixture
+def balldontlie():
+    with open("tests/json/balldontlie_players.json", "r") as f:
+        players = json.load(f)
+    return BallDontLieAdapter(players)
+
+
 # @pytest.fixture
 # def betranges():
 #     return BetRanges()
@@ -89,9 +97,21 @@ def season():
 
 
 @pytest.fixture
-def gamelogs():
+def nba_gamelogs():
     dfs = {}
-    p = Path("tests/csv/game-logs")
+    p = Path("tests/csv/nba/game-logs")
+    for fp in p.iterdir():
+        with open(fp, "r") as f:
+            # p_name = " ".join(str(fp).split()[:2]).split("/")[-1]
+            p_name = str(fp).split("/")[-1].split(".")[0]
+            dfs[p_name] = pd.read_csv(f)
+    return dfs
+
+
+@pytest.fixture
+def balldontlie_gamelogs():
+    dfs = {}
+    p = Path("tests/csv/balldontlie/game-logs")
     for fp in p.iterdir():
         with open(fp, "r") as f:
             # p_name = " ".join(str(fp).split()[:2]).split("/")[-1]

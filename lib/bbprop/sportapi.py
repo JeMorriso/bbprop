@@ -83,7 +83,15 @@ class BallDontLie:
         self.players = {k.lower(): v for k, v in players.items()}
 
     def player_by_name(self, name):
-        return self.players[name.lower()]
+        """Get the BallDontLie player from a name.
+
+        Functions as a getter.
+        """
+        try:
+            return self.players[name.lower()]
+        except KeyError:
+            logger.warning(f'Could not find player "{name}".')
+            return {}
 
     @timeout_retry(10)
     def season_game_log(self, player_id, season):
@@ -94,13 +102,19 @@ class BallDontLie:
         res = requests.get(
             f"{self.url}/stats?seasons[]={season}&player_ids[]={player_id}&per_page=100"
         )
-        return res.json()["data"]
-
-        # TODO: season parameter of different form than NBA class
-        pass
+        data = res.json()["data"]
+        if not data:
+            logger.warning(
+                f"Player with id {player_id} has no game logs for season {season}."
+            )
+        return data
 
     def season_game_log_by_name(self, name, season):
-        return self.season_game_log(self.players[name]["id"], season)
+        player = self.player_by_name(name)
+        if player:
+            return self.season_game_log(player["id"], season)
+        else:
+            return []
 
 
 class BallDontLieAdapter(BallDontLie):
@@ -123,4 +137,8 @@ class BallDontLieAdapter(BallDontLie):
         return glg
 
     def season_game_log_by_name(self, name, season):
-        return self.season_game_log(self.players[name]["id"], season)
+        player = self.player_by_name(name)
+        if player:
+            return self.season_game_log(player["id"], season)
+        else:
+            return pd.DataFrame()
