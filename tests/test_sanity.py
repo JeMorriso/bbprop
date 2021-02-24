@@ -94,6 +94,14 @@ class TestBetRanges:
         [
             (pytest.lazy_fixture("pinnaclegame"), pytest.lazy_fixture("nba_gamelogs")),
             (pytest.lazy_fixture("pinnaclegame2"), pytest.lazy_fixture("nba_gamelogs")),
+            (
+                pytest.lazy_fixture("pinnaclegame"),
+                pytest.lazy_fixture("balldontlie_gamelogs"),
+            ),
+            (
+                pytest.lazy_fixture("pinnaclegame2"),
+                pytest.lazy_fixture("balldontlie_gamelogs"),
+            ),
         ],
     )
     def test_calc_values(self, pin, gamelogs, last3, last5, last10, season):
@@ -112,6 +120,14 @@ class TestBetRanges:
         [
             (pytest.lazy_fixture("pinnaclegame"), pytest.lazy_fixture("nba_gamelogs")),
             (pytest.lazy_fixture("pinnaclegame2"), pytest.lazy_fixture("nba_gamelogs")),
+            (
+                pytest.lazy_fixture("pinnaclegame"),
+                pytest.lazy_fixture("balldontlie_gamelogs"),
+            ),
+            (
+                pytest.lazy_fixture("pinnaclegame2"),
+                pytest.lazy_fixture("balldontlie_gamelogs"),
+            ),
         ],
     )
     def test_to_list(self, pin, gamelogs, last3, last5, last10, season):
