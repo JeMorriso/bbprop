@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from io import StringIO
 from pathlib import Path
 import re
+import json
 
 import pandas as pd
 
@@ -26,6 +27,9 @@ class LocalStorage(Storage):
         self.game_log_dir = f"{self.dir}game-logs"
         self.bets_dir = f"{self.dir}bets"
 
+    def root_dir(self):
+        return self.dir
+
     def dataframe_to_csv(self, df, path):
         df.to_csv(path, header=True, index=False)
 
@@ -36,6 +40,10 @@ class LocalStorage(Storage):
         csvs = [p for p in Path(self.game_log_dir).iterdir() if p.is_file()]
         return [csv.name.replace(".csv", "") for csv in csvs]
 
+    def load_json(self, path):
+        with open(path, "r") as f:
+            return json.load(f)
+
 
 class S3Storage(Storage):
     def __init__(self, session, bucket):
@@ -44,6 +52,9 @@ class S3Storage(Storage):
         self.bucket = bucket
         self.game_log_dir = "game-logs"
         self.bets_dir = "bets"
+
+    def root_dir(self):
+        return ""
 
     def dataframe_to_csv(self, df, path):
         # don't export to file, return csv string
@@ -68,3 +79,20 @@ class S3Storage(Storage):
         files = [re.sub(fr"^{prefix}", "", f) for f in paths]
         players = [re.sub(r"\.csv$", "", f) for f in files]
         return players
+
+    def load_json(self, path):
+        obj = self.s3.get_object(Bucket=self.bucket, Key=path)
+        obj_str = obj["Body"].read().decode()
+        return json.loads(obj_str)
+
+
+class BallDontLieStorage:
+    """Compose LocalStorage / S3Storage, add BallDontLie specific configuration."""
+
+    def __init__(self, store):
+        self.store = store
+        self.dir = "players"
+
+    def players(self):
+        path = f"{self.store.root_dir()}{self.dir}/balldontlie_players.json"
+        return self.store.load_json(path)
