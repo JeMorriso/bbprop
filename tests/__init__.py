@@ -2,5 +2,4 @@
 # in bbprop_api.
 import sys
 
-# sys.path.append("bbprop_api/chalice_app")
-sys.path.append("bbprop_api/cloud_run")
+sys.path.append("apis/chalice")
