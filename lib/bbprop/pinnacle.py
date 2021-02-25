@@ -3,6 +3,7 @@ from typing import Dict, Tuple
 import logging
 
 from seleniumwire import webdriver
+from selenium.common.exceptions import TimeoutException
 
 from bbprop.bet import Bet
 
@@ -65,7 +66,8 @@ class PinnacleGame:
         """Merge straight and related props.
 
         Return:
-            Prop bet information merged into one dictionary.
+            Prop bet information merged into list, where each list element is of type
+            Bet.
         """
         pass
 
@@ -205,7 +207,12 @@ class Pinnacle:
             del self.driver.requests
             self.driver.get(url)
 
-        return self.driver.wait_for_request(regex, timeout=180)
+        try:
+            return self.driver.wait_for_request(regex, timeout=180)
+        except TimeoutException:
+            logger.error(
+                f"Unable to find request matching regex: `{regex}`. Pinnacle scraping aborted."
+            )
 
     def iterate_games(self, tab_fn):
         pass

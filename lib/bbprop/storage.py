@@ -93,6 +93,10 @@ class BallDontLieStorage:
         self.store = store
         self.dir = "players"
 
+    def bets_dir(self):
+        """Return path to bets directory."""
+        return self.store.bets_dir
+
     def players(self):
         path = f"{self.store.root_dir()}{self.dir}/balldontlie_players.json"
         return self.store.load_json(path)
