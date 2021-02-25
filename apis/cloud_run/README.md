@@ -1,36 +1,19 @@
-## Build and run Docker container
+## Interpreter
 
-- Build the container - run from `bbprop-data` directory, because Docker can't use external folders and I need to include `bbprop` module
-  `docker build -t bbprop_cloud_run -f bbprop_api/cloud_run/Dockerfile .`
-- Run the container:
-  `docker run --rm -p 8080:8080 -e PORT=8080 bbprop_cloud_run`
+- Conda `bbprop_cloud_run`
 
-## Deployment
+## Build
 
-- Build step - also run this from `bbprop-data` directory
-  `gcloud builds submit --tag gcr.io/bbprop/bbprop_cloud_run`
-- Run:
-  `gcloud beta run deploy bbprop --image gcr.io/bbprop/bbprop_cloud_run --region us-west1 --platform managed`
+- Use `build.sh` script
 
-## Roadmap
+## Deploy
 
-- implement in docker first
--
-- Pinnacle scraper must be in cloud run container
-- then output dataframe to bucket
+- local: `docker run --rm -p 8080:8080 -e PORT=8080 bbprop_cloud_run`
+- remote: `gcloud beta run deploy bbprop --image gcr.io/bbprop/bbprop_cloud_run --region us-west1 --platform managed`
 
-  - use lambda, with API gateway
+## Gotchas
 
-- figure out how to schedule it
-
-- another function that will request the csv, for Next.js
-
-## Not Yet
-
-- lambda /cloud function for updating game logs every day
-
-- then cloud run will need to have access to game log csvs
-  - either google bucket solution or lambda function with API gateway
+- it looks like .gitignore in `cloud_run` directory is being used by gcloud, so don't ignore `docker_env.py` in this file, use `.gitignore` in project root
 
 ## Sources
 

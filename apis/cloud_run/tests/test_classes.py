@@ -6,9 +6,14 @@ import pytest
 
 class TestLocal:
     # See Pytest Flask docs about client - it's from Flask
+    def test_test_selenium(self, client, accept_json, app):
+        res = client.get("/test-selenium", headers=accept_json)
+        assert res.status_code == 200
+
+    # See Pytest Flask docs about client - it's from Flask
     def test_selenium(self, client, accept_json, app):
         res = client.get("/selenium", headers=accept_json)
-        assert len(res.json) > 0
+        assert res.status_code == 200
 
 
 class TestDocker:
@@ -21,7 +26,7 @@ class TestDocker:
     )
     def test_selenium(self, api_url):
         res = requests.get(f"{api_url}/selenium")
-        assert len(res.json()) > 0
+        assert res.status_code == 200
 
 
 class TestPinnacle:

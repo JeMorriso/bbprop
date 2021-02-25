@@ -23,6 +23,8 @@ WORKDIR $APP_HOME
 
 ADD app/app.py app.py
 ADD bbprop bbprop
+ADD docker_env.py docker_env.py
+ADD middlewares.py middlewares.py
 
 # Run the web service on container startup. Here we use the gunicorn
 # webserver, with one worker process and 8 threads.

@@ -8,6 +8,7 @@
 
 ENV=$1
 
+# requirements.txt will not pick up local editable dependency.
 cp -r ../../lib/bbprop .
 
 if [ "$ENV" == "local" ]

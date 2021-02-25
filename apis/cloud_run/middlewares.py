@@ -28,7 +28,7 @@ def get_player_ids():
 
 
 def balldontliestorage_local():
-    localstorage = LocalStorage("tests/json")
+    localstorage = LocalStorage("tests/localstorage")
     return BallDontLieStorage(localstorage)
 
 
@@ -81,8 +81,12 @@ def bet_values_dataframe(bet_values):
 
 
 def store_bet_values_dataframe(df, store):
-    path = f"{store.bets_dir}/{datetime.now().isoformat()}"
-    store.dataframe_to_csv(df, path)
+    # path = f"{store.bets_dir()}/{datetime.now().isoformat()}.csv"
+    path = (
+        f"{store.bets_dir()}/latest/{datetime.now().strftime('%Y-%m-%dT%H:%M:%S')}.csv"
+    )
+    # path = f"{store.bets_dir()}/foo.csv"
+    store.store.dataframe_to_csv(df, path)
 
 
 def driver(driver_args, bdl_store):
