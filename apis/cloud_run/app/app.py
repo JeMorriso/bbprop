@@ -3,8 +3,7 @@ from flask import Flask, jsonify
 # Add chromedriver binary to path.
 import chromedriver_binary  # noqa: F401
 
-# from bbprop.pinnacle import Pinnacle
-from middlewares import driver, balldontliestorage_local, balldontliestorage_s3
+from middlewares import driver
 
 
 def create_app(
@@ -15,18 +14,7 @@ def create_app(
     @app.route("/selenium")
     def scrape():
         # TODO: add exception handling.
-        driver(driver_args, balldontliestorage_s3())
-        return jsonify(success=True), 200
-
-    @app.route("/test-selenium")
-    def test_scrape():
-        """This route will only work on Flask because local storage."""
-        driver(driver_args, balldontliestorage_local())
-        return jsonify(success=True), 200
-        # try:
-        #     driver(driver_args, balldontliestorage_local())
-        #     return jsonify(success=True), 200
-        # except:
-        #     return jsonify(success=False), 500
+        bet_values = driver(driver_args)
+        return jsonify(bet_values), 200
 
     return app

@@ -14,6 +14,7 @@
 ## Gotchas
 
 - it looks like .gitignore in `cloud_run` directory is being used by gcloud, so don't ignore `docker_env.py` in this file, use `.gitignore` in project root
+- NBA-API, boto3 only being included as requirement because bbprop lib depends on it
 
 ## Sources
 
