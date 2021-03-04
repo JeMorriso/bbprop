@@ -48,8 +48,9 @@ class LocalStorage(Storage):
 class S3Storage(Storage):
     def __init__(self, session, bucket):
         # boto3 session from user or lambda role
-        self.s3 = session.client("s3")
-        self.bucket = bucket
+        self.client = session.client("s3")
+        self.resource = session.resource("s3")
+        self.bucket = self.resource.Bucket(bucket)
         self.game_log_dir = "game-logs"
         self.bets_dir = "bets"
 
@@ -62,17 +63,17 @@ class S3Storage(Storage):
         # put_object method requires byte stream, not string
         csv_stream = bytes(csv_str.encode("UTF-8"))
 
-        self.s3.put_object(Bucket=self.bucket, Key=path, Body=csv_stream)
+        self.client.put_object(Bucket=self.bucket.name, Key=path, Body=csv_stream)
 
     def csv_to_dataframe(self, path):
-        obj = self.s3.get_object(Bucket=self.bucket, Key=path)
+        obj = self.client.get_object(Bucket=self.bucket.name, Key=path)
         csv_str = obj["Body"].read().decode("UTF-8")
 
         return pd.read_csv(StringIO(csv_str))
 
     def player_names(self):
         prefix = f"{self.game_log_dir}/"
-        objects = self.s3.list_objects_v2(Bucket=self.bucket, Prefix=prefix)
+        objects = self.client.list_objects_v2(Bucket=self.bucket.name, Prefix=prefix)
         keys = [f["Key"] for f in objects["Contents"]]
         # Remove the matching directory, Prefix doesn't support regex.
         paths = [k for k in keys if re.match(fr"{prefix}.+", k)]
@@ -80,8 +81,35 @@ class S3Storage(Storage):
         players = [re.sub(r"\.csv$", "", f) for f in files]
         return players
 
+    def find_files(self, path):
+        """Return paths of files with matching prefix."""
+        objects = self.bucket.objects.filter(Prefix=path)
+        keys = []
+        for obj in objects:
+            keys.append(obj.key)
+        return set(keys)
+
+    def find_file(self, path):
+        """Return path of first file with matching prefix.
+
+        Does not check for exact match.
+        """
+        objects = self.find_files(path)
+        if objects:
+            return objects.pop()
+        else:
+            return ""
+
+    def move_file(self, source, dest):
+        """Move file within bucket."""
+        source_dict = {"Bucket": self.bucket.name, "Key": source}
+        source_obj = self.resource.Object(self.bucket.name, source)
+        self.bucket.copy(source_dict, dest)
+
+        source_obj.delete()
+
     def load_json(self, path):
-        obj = self.s3.get_object(Bucket=self.bucket, Key=path)
+        obj = self.client.get_object(Bucket=self.bucket.name, Key=path)
         obj_str = obj["Body"].read().decode()
         return json.loads(obj_str)
 
