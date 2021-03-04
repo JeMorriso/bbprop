@@ -8,7 +8,11 @@ import boto3
 import pandas as pd
 
 from chalicelib.storage import LocalStorage, BallDontLieStorage, S3Storage
-from apis.chalice.app import app, store_bet_values_dataframe
+from apis.chalice.app import (
+    app,
+    store_bet_values_dataframe,
+    archive_latest_bet_values_file,
+)
 
 
 testapp = Chalice(app_name="test-bbprop-api")
@@ -73,3 +77,26 @@ def test_scrape_and_deploy():
         "detail": {},
     }
     fake_scrape_and_deploy(fake_event)
+
+
+def test_archive_previous_bet_values_file(tests3storage):
+    latest_files = tests3storage.find_files(tests3storage.latest_dir)
+    archive_latest_bet_values_file(tests3storage)
+    # The directory itself matches...
+    assert len(tests3storage.find_files(tests3storage.latest_dir)) == 1
+
+    # put the files back
+    for f in latest_files:
+        if "csv" in f:
+            fname = f.split("/")[-1]
+            source = f"{tests3storage.bets_dir}/{fname}"
+            dest = f"{tests3storage.latest_dir}/{fname}"
+            tests3storage.find_file(f"{tests3storage.bets_dir}/{fname}")
+            tests3storage.move_file(source, dest)
+
+    assert len(tests3storage.find_files(tests3storage.latest_dir)) > 1
+
+
+def test_store_bet_values_dataframe(tests3storage):
+    df = tests3storage.csv_to_dataframe("tests/bar.csv")
+    store_bet_values_dataframe(df, tests3storage)

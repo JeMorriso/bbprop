@@ -53,6 +53,7 @@ class S3Storage(Storage):
         self.bucket = self.resource.Bucket(bucket)
         self.game_log_dir = "game-logs"
         self.bets_dir = "bets"
+        self.latest_dir = f"{self.bets_dir}/latest"
 
     def root_dir(self):
         return ""

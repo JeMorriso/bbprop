@@ -146,3 +146,11 @@ def s3storage():
         ),
         bucket=os.getenv("S3_BUCKET"),
     )
+
+
+@pytest.fixture
+def tests3storage(s3storage):
+    """Use test directories in s3 bucket."""
+    s3storage.bets_dir = "tests"
+    s3storage.latest_dir = "tests/test_sub"
+    return s3storage
