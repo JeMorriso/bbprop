@@ -27,6 +27,9 @@ def players():
     # return jsonify(players)
 
 
+# @testapp.route('')
+
+
 def fake_scrape_and_deploy(event):
     """It looks like Chalice doesn't offer a way to invoke a scheduled function
     locally.
@@ -43,13 +46,12 @@ def fake_scrape_and_deploy(event):
 def test_nextjs_local():
     with Client(app) as client:
         res = client.http.get("/nextjs")
-        assert res.json_body == {"hello": "world"}
+        assert len(res.json_body) > 0
 
 
 def test_nextjs_remote():
     res = requests.get(f'{os.getenv("LAMBDA_API")}/nextjs')
-    assert res.json() == {"hello": "world"}
-    pass
+    assert len(res.json()) > 0
 
 
 def test_testapp_player():

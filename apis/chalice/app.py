@@ -31,6 +31,15 @@ def archive_latest_bet_values_file(store):
             store.move_file(source, dest)
 
 
+@app.route("/nextjs")
+def nextjs():
+    store = S3Storage(boto3.session.Session(), bucket="bbprop")
+    latest_file = store.find_file(store.latest_dir)
+    bet_values = store.csv_to_dataframe(latest_file)
+    bv_json = bet_values.to_json(orient="records")
+    return bv_json
+
+
 @app.schedule("rate(1 hour)")
 def scrape_and_deploy(event):
     """Trigger Cloud Run, Vercel deploy hook, and store bet values .csv.
