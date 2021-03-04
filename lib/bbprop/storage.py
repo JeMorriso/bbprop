@@ -93,9 +93,14 @@ class S3Storage(Storage):
     def find_file(self, path):
         """Return path of first file with matching prefix.
 
-        Does not check for exact match.
+        Does not check for exact match. Ignores 'directories'. Note that 'directories'
+        do not actually exist in S3.
+
+        Example:
+            path = 'foo/' ignores the 'foo' directory.
         """
-        objects = self.find_files(path)
+        objects = list(self.find_files(path))
+        objects = [o for o in objects if o[-1] != "/"]
         if objects:
             return objects.pop()
         else:
@@ -110,6 +115,8 @@ class S3Storage(Storage):
         source_obj.delete()
 
     def load_json(self, path):
+        if not path:
+            return {}
         obj = self.client.get_object(Bucket=self.bucket.name, Key=path)
         obj_str = obj["Body"].read().decode()
         return json.loads(obj_str)
