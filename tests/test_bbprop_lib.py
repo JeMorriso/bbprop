@@ -165,6 +165,23 @@ class TestStorage:
         s3storage.player_names()
         pass
 
+    def test_s3storage_find_files(self, s3storage):
+        keys = s3storage.find_files("bets/")
+        assert keys
+        pass
+
+    def test_s3storage_find_file(self, s3storage):
+        key = s3storage.find_file("bets/2021-03-04T16:51:52.csv")
+        assert key
+
+    def test_s3storage_move_file(self, s3storage):
+        source = "tests/test_sub/foo.csv"
+        dest = "tests/foo.csv"
+        s3storage.move_file(source, dest)
+        assert not s3storage.find_file(source)
+        s3storage.move_file(dest, source)
+        assert s3storage.find_file(source)
+
     @pytest.mark.parametrize(
         "bdl_store",
         [
