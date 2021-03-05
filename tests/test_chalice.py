@@ -27,9 +27,6 @@ def players():
     # return jsonify(players)
 
 
-# @testapp.route('')
-
-
 def fake_scrape_and_deploy(event):
     """It looks like Chalice doesn't offer a way to invoke a scheduled function
     locally.

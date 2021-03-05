@@ -213,6 +213,8 @@ class Pinnacle:
             logger.error(
                 f"Unable to find request matching regex: `{regex}`. Pinnacle scraping aborted."
             )
+            # Not obeying Null object pattern.
+            return None
 
     def iterate_games(self, tab_fn):
         pass
@@ -256,6 +258,10 @@ class Pinnacle:
         data = []
         for r in [straight, related]:
             match = self._find_request(r)
-            data.append(json.loads(match.response.body))
+            if match is None:
+                # Not obeying Null object pattern.
+                return None
+            else:
+                data.append(json.loads(match.response.body))
 
         return PinnacleGame(*data)

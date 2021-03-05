@@ -61,6 +61,8 @@ def driver(driver_args):
 
     with Pinnacle(*driver_args) as pin:
         pg = pin.league()
+        if pg is None:
+            return []
 
     pnames = list(set([p.name for p in pg.props]))
     game_logs = retrieve_game_logs(pnames)

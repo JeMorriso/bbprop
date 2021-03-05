@@ -49,6 +49,10 @@ def scrape_and_deploy(event):
     res = requests.get(f'{os.getenv("GCLOUD_API")}/selenium')
 
     bet_values = pd.read_json(res.json(), orient="records")
+    # If there are no bets (E.G. all-star break).
+    if bet_values.empty:
+        return
+
     store = S3Storage(boto3.session.Session(), bucket="bbprop")
     archive_latest_bet_values_file(store)
     store_bet_values_dataframe(bet_values, store)
