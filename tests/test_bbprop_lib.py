@@ -4,37 +4,123 @@ import pandas as pd
 import pytest
 
 from bbprop.betrange import BetRanges
+from bbprop.bet import Bet
 
 
 class TestPinnacle:
-    def test_game_id(self, testpinnacle):
-        id_ = 1249774441
-        url1 = "https://www.pinnacle.com/en/basketball/nba/detroit-pistons-vs-cleveland-cavaliers/1249774441"
-        url2 = "https://www.pinnacle.com/en/basketball/nba/detroit-pistons-vs-cleveland-cavaliers/1249774441/"
-
-        pin = testpinnacle
-        assert int(pin._game_id(url1)) == id_
-        assert int(pin._game_id(url2)) == id_
-
-    # Test requires NEW game link
-    # def test_game(testpinnacle):
-    #     data = testpinnacle.game(
-    #         url="https://www.pinnacle.com/en/basketball/nba/detroit-pistons-vs-cleveland-cavaliers/1249774441"
-    #     )
-    #     print(data)
-
-    def test_league(self, testpinnacle):
-        pg = testpinnacle.league()
-        assert len(pg.props) > 0
-
-
-class TestPinnacleGame:
     @pytest.mark.parametrize(
-        "pin",
-        [(pytest.lazy_fixture("pinnaclegame")), (pytest.lazy_fixture("pinnaclegame2"))],
+        "pin", [pytest.lazy_fixture("pinnaclenba"), pytest.lazy_fixture("pinnaclenhl")]
     )
-    def test_prop_bets(self, pin):
-        pin.prop_bets()
+    def test_fetch_data(self, pin):
+        matchups, straight = pin.fetch_data(pin.api_prefix, pin.league.id_)
+        assert len(matchups) > 0
+        assert len(straight) > 0
+
+    @pytest.mark.parametrize(
+        ("pin", "matchups", "straight"),
+        [
+            (
+                pytest.lazy_fixture("pinnaclenba"),
+                pytest.lazy_fixture("nba_matchups"),
+                pytest.lazy_fixture("nba_straight"),
+            ),
+            (
+                pytest.lazy_fixture("pinnaclenhl"),
+                pytest.lazy_fixture("nhl_matchups"),
+                pytest.lazy_fixture("nhl_straight"),
+            ),
+        ],
+    )
+    def test_merge_matchups_and_straight(self, pin, matchups, straight):
+        # matchups = pin.filter_matchups_props(matchups)
+        m_ids = pin.parse_matchup_ids(matchups)
+        # straight = pin.filter_straight_props(straight, m_ids)
+        merged = pin.merge_matchups_and_straight(matchups, straight)
+        for m in m_ids:
+            assert m in merged
+
+    @pytest.mark.parametrize(
+        ("pin", "merged"),
+        [
+            (
+                pytest.lazy_fixture("pinnaclenba"),
+                pytest.lazy_fixture("pin_nba_merged"),
+            ),
+            (
+                pytest.lazy_fixture("pinnaclenhl"),
+                pytest.lazy_fixture("pin_nhl_merged"),
+            ),
+        ],
+    )
+    def test_parse_description(self, pin, merged):
+        for k, v in merged.items():
+            m, s = [v[kk] for kk in ["matchup", "straight"]]
+            name, category = pin.parse_description(
+                m["special"]["description"], pin.league.categories
+            )
+            print(f"name:{name}, category:{category}")
+            assert name and category
+
+    @pytest.mark.parametrize(
+        ("pin", "merged"),
+        [
+            (
+                pytest.lazy_fixture("pinnaclenba"),
+                pytest.lazy_fixture("pin_nba_merged"),
+            ),
+            (
+                pytest.lazy_fixture("pinnaclenhl"),
+                pytest.lazy_fixture("pin_nhl_merged"),
+            ),
+        ],
+    )
+    def test_prop_alignments(self, pin, merged):
+        for k, v in merged.items():
+            m, s = [v[kk] for kk in ["matchup", "straight"]]
+            alignments = pin.parse_alignments(m["parent"]["participants"])
+            home, away = pin.validate_prop_alignments(alignments)
+            print(f"home: {home}, away: {away}")
+            assert home and away
+
+    @pytest.mark.parametrize(
+        ("pin", "merged"),
+        [
+            (
+                pytest.lazy_fixture("pinnaclenba"),
+                pytest.lazy_fixture("pin_nba_merged"),
+            ),
+            (
+                pytest.lazy_fixture("pinnaclenhl"),
+                pytest.lazy_fixture("pin_nhl_merged"),
+            ),
+        ],
+    )
+    def test_parse_bet_options(self, pin, merged):
+        for k, v in merged.items():
+            m, s = [v[kk] for kk in ["matchup", "straight"]]
+            option_prices = pin.parse_bet_options(m, s)
+            for o in option_prices:
+                option, points, line = [o[k] for k in ("option", "points", "line")]
+                print(f"option: {option}, points: {points}, line: {line}")
+                assert option and points and line
+
+    @pytest.mark.parametrize(
+        ("pin", "merged"),
+        [
+            (
+                pytest.lazy_fixture("pinnaclenba"),
+                pytest.lazy_fixture("pin_nba_merged"),
+            ),
+            (
+                pytest.lazy_fixture("pinnaclenhl"),
+                pytest.lazy_fixture("pin_nhl_merged"),
+            ),
+        ],
+    )
+    def test_parse_props(self, pin, merged):
+        bets = pin.parse_props(merged, pin.league.categories)
+        for b in bets:
+            assert isinstance(b, Bet)
 
 
 class TestNBA:
