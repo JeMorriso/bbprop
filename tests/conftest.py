@@ -6,57 +6,63 @@ import pytest
 import pandas as pd
 import boto3
 
-from bbprop.pinnacle import Pinnacle, PinnacleGame
+from bbprop.pinnacle import Pinnacle, PinnacleNBA, PinnacleNHL
 from bbprop.sportapi import NBA, BallDontLieAdapter
 from bbprop.betrange import Last10, Last3, Last5, Season
 from bbprop.storage import LocalStorage, S3Storage, BallDontLieStorage
 
-# from bbprop_api.cloud_run.app import create_app
 
-
-# @pytest.fixture
-# def app():
-#     return create_app(["--disable-gpu", "--no-sandbox", "window-size=1024,768"])
+@pytest.fixture
+def pinnaclenba():
+    return Pinnacle(PinnacleNBA())
 
 
 @pytest.fixture
-def testpinnacle():
-    with Pinnacle() as tp:
-        yield tp
+def pinnaclenhl():
+    return Pinnacle(PinnacleNHL())
 
 
 @pytest.fixture
-def straight():
+def pin_nba_merged(pinnaclenba, nba_matchups, nba_straight):
+    nba_matchups = pinnaclenba.filter_matchups_props(nba_matchups)
+    m_ids = pinnaclenba.parse_matchup_ids(nba_matchups)
+    nba_straight = pinnaclenba.filter_straight_props(nba_straight, m_ids)
+    merged = pinnaclenba.merge_matchups_and_straight(nba_matchups, nba_straight)
+    return merged
+
+
+@pytest.fixture
+def pin_nhl_merged(pinnaclenhl, nhl_matchups, nhl_straight):
+    nhl_matchups = pinnaclenhl.filter_matchups_props(nhl_matchups)
+    m_ids = pinnaclenhl.parse_matchup_ids(nhl_matchups)
+    nhl_straight = pinnaclenhl.filter_straight_props(nhl_straight, m_ids)
+    merged = pinnaclenhl.merge_matchups_and_straight(nhl_matchups, nhl_straight)
+    return merged
+
+
+@pytest.fixture
+def nba_straight():
     with open("tests/json/straight.json", "r") as f:
         return json.load(f)
 
 
 @pytest.fixture
-def related():
+def nba_matchups():
     with open("tests/json/related.json", "r") as f:
         return json.load(f)
 
 
 @pytest.fixture
-def homepage_straight():
-    with open("tests/json/nba-homepage-straight.json", "r") as f:
+def nhl_straight():
+    with open("tests/json/pinnacle-nhl-straight.json", "r") as f:
         return json.load(f)
 
 
 @pytest.fixture
-def homepage_matchups():
-    with open("tests/json/nba-homepage-matchups.json", "r") as f:
+def nhl_matchups():
+    with open("tests/json/pinnacle-nhl-matchups.json", "r") as f:
         return json.load(f)
-
-
-@pytest.fixture
-def pinnaclegame(straight, related):
-    return PinnacleGame(straight, related, False)
-
-
-@pytest.fixture
-def pinnaclegame2(homepage_straight, homepage_matchups):
-    return PinnacleGame(homepage_straight, homepage_matchups, False)
+    pass
 
 
 @pytest.fixture
