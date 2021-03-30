@@ -1,52 +1,142 @@
-import json
-from typing import Dict, Tuple
 import logging
+from typing import Dict, Tuple
 
-from seleniumwire import webdriver
-from selenium.common.exceptions import TimeoutException
+import requests
 
 from bbprop.bet import Bet
 
 logger = logging.getLogger(__name__)
 
 
-class PinnacleGame:
-    def __init__(self, straight, related, clean=True):
-        """Store captured information about available bets on Pinnacle for a game.
+class PinnacleNBA:
+    id_ = 487
+    categories = {
+        "points": ("PTS",),
+        "assists": ("AST",),
+        "turnovers": ("TOV",),
+        "3 point fg": ("FG3M",),
+        "rebounds": ("REB",),
+        "blocks": ("BLK",),
+        "pts+rebs+asts": ("PTS", "REB", "AST"),
+        "steals+blocks": ("STL", "BLK"),
+        "double+double": ("DD2",),
+        "triple+double": ("TD3",),
+    }
 
-        Attributes:
-            straight: Response from Pinnacle, to merge.
-            related: Response from Pinnacle, to merge.
-        """
-        self.straight = straight
-        self.related = related
 
-        self._props_dict = {}
+class PinnacleNHL:
+    id_ = 1456
+    categories = {
+        "points": ("PTS",),
+        "goals": ("G",),
+        "assists": ("A",),
+        "shots on goal": ("SOG",),
+        "saves": ("SV",),
+    }
+
+
+class Pinnacle:
+    def __init__(self, league, run=False):
+        self.league = league
+        self.api_prefix = "http://guest.api.arcadia.pinnacle.com/0.1/leagues"
+        self.straight = self.matchups = []
         self.props = []
 
-        if clean:
-            # self._props_dict = self._build_props()
-            self.props = self.prop_bets()
+        if run:
+            self.matchups, self.straight = self.fetch_data(
+                self.api_prefix, self.league.id_
+            )
+            self.props = self.prop_bets_new(
+                self.matchups, self.straight, self.league.categories
+            )
 
-    def _parse_description(self, desc: str) -> Tuple[str]:
+    def fetch_data(self, prefix, id_):
+        logger.info("Fetching Pinnacle data...")
+
+        matchups = f"{prefix}/{id_}/matchups"
+        straight = f"{prefix}/{id_}/markets/straight"
+
+        data = []
+        for r in [matchups, straight]:
+            res = requests.get(r)
+            data.append(res.json())
+
+        return data
+
+    def filter_matchups_props(self, matchups):
+        def f(d):
+            try:
+                return d["special"]["category"] == "Player Props"
+            except KeyError:
+                return False
+
+        filtered = list(filter(f, matchups))
+        return filtered
+
+    def filter_straight_props(self, straight, prop_ids):
+        straight_props = [s for s in straight if s["matchupId"] in prop_ids]
+        return straight_props
+
+    def merge_matchups_and_straight(self, matchups, straight):
+        m_dict = {m["id"]: m for m in matchups}
+        s_dict = {s["matchupId"]: s for s in straight}
+        props = {}
+        for k, v in m_dict.items():
+            to_pop = []
+            if k in props:
+                logger.warning(f"ID: {k} occurs multiple times in matchups. Skipping.")
+                to_pop.append(k)
+            elif k not in s_dict:
+                logger.warning(f"ID: {k} doesn't have any prices. Skipping.")
+            else:
+                props[k] = {"matchup": v, "straight": s_dict[k]}
+        for k in to_pop:
+            props.pop(k, None)
+        return props
+
+    def validate_prop_alignments(self, alignments):
+        # TODO: better checking
+        home = alignments["home"]
+        away = alignments["away"]
+        return home, away
+
+    def parse_alignments(self, participants):
+        alignments = {}
+        for p in participants:
+            alignments[p["alignment"]] = p["name"]
+        return alignments
+
+    def parse_bet_options(self, matchup, straight):
+        # TODO: potentially error checking here
+        m_options = matchup["participants"]
+        s_options = straight["prices"]
+        s_options_dict = {s["participantId"]: s for s in s_options}
+        options = []
+        for o in m_options:
+            options.append(
+                {
+                    "option": o["name"],
+                    "points": s_options_dict[o["id"]]["points"],
+                    "line": s_options_dict[o["id"]]["price"],
+                }
+            )
+        return options
+
+    def parse_matchup_id(self, matchup):
+        return matchup["id"]
+
+    def parse_matchup_ids(self, matchups):
+        matchup_ids = [self.parse_matchup_id(m) for m in matchups]
+        return set(matchup_ids)
+
+    def parse_description(self, desc: str, categories: Dict) -> Tuple[str]:
         """Parse player description into name and scoring categories.
 
         Returns:
             Tuple of name and category string.
         """
-        translations = {
-            "points": ("PTS",),
-            "assists": ("AST",),
-            "turnovers": ("TOV",),
-            "3 point fg": ("FG3M",),
-            "rebounds": ("REB",),
-            "blocks": ("BLK",),
-            "pts+rebs+asts": ("PTS", "REB", "AST"),
-            "steals+blocks": ("STL", "BLK"),
-            "double+double": ("DD2",),
-            "triple+double": ("TD3",),
-        }
 
+        # TODO: regex
         oi = desc.find("(")
         ci = desc.find(")")
         if oi == -1 or ci == -1:
@@ -56,212 +146,46 @@ class PinnacleGame:
         name = desc[:oi].strip()
         pin_cat = desc[oi + 1 : ci]
         try:
-            cat = translations[pin_cat.lower()]
+            cat = categories[pin_cat.lower()]
         except KeyError:
             logger.warning(f'Could not find scoring category "{pin_cat}".')
             cat = ()
         return name, cat
 
-    def prop_bets(self) -> Dict:
-        """Merge straight and related props.
+    def parse_prop(self, matchup, straight, categories):
+        alignments = self.parse_alignments(matchup["parent"]["participants"])
+        home, away = self.validate_prop_alignments(alignments)
+        option_prices = self.parse_bet_options(matchup, straight)
+        name, market = self.parse_description(
+            matchup["special"]["description"], categories
+        )
 
-        Return:
-            Prop bet information merged into list, where each list element is of type
-            Bet.
-        """
-        pass
-
-        def prop_filter(d):
-            try:
-                return d["special"]["category"] == "Player Props"
-            except KeyError:
-                return False
-
-        def team(teams, alignment):
-            return next(
-                part["name"]
-                for part in p["parent"]["participants"]
-                if part["alignment"] == alignment
-            )
-
-        def parse_related_prop(p):
-            """Parse out relevant bet information from the 'related' dictionary."""
-            bet_info = {"sportsbook": "Pinnacle"}
-
-            matchup_id = p["id"]
-            option_ids = {}
-
-            options = p["participants"]
-            for o in options:
-                option_ids[o["id"]] = o["name"]
-
-            bet_info["name"], bet_info["market"] = self._parse_description(
-                p["special"]["description"]
-            )
-            teams = p["parent"]["participants"]
-            bet_info["home"] = team(teams, "home")
-            bet_info["away"] = team(teams, "away")
-
-            return bet_info, matchup_id, option_ids
-
-        def parse_straight_prop(straight_dict, option_ids):
-            """Parse info from 'straight' dictionary"""
-
-            def try_add_bet_option(straight_options, id_, name):
-                """Add bet options that have points and line available."""
-                try:
-                    # Throws StopIteration if no match.
-                    match = next(
-                        s for s in straight_options if s["participantId"] == id_
-                    )
-                    return {
-                        "option": name,
-                        "points": match["points"],
-                        "line": match["price"],
-                    }
-
-                except StopIteration:
-                    # The bet does not have a line yet.
-                    logger.warning(
-                        f"Bet ID {id_} with name '{name}' has no available line."
-                    )
-                    return {}
-
-            bet_options = []
-            straight_options = straight_dict[matchup_id]["prices"]
-            for id_, name in option_ids.items():
-                bo = try_add_bet_option(straight_options, id_, name)
-                if bo:
-                    bet_options.append(bo)
-            return bet_options
-
-        logger.info("Getting prop bets...")
-
-        # Filter out prop bets.
-        related = list(filter(prop_filter, self.related))
-        straight_dict = {s["matchupId"]: s for s in self.straight}
-
-        # Pull info from related list, using straight dict, for each prop.
         bets = []
-        for p in related:
-            try:
-                bet_info, matchup_id, option_ids = parse_related_prop(p)
-                bet_options = parse_straight_prop(straight_dict, option_ids)
+        for o in option_prices:
+            option, points, line = [o[k] for k in ("option", "points", "line")]
 
-                for bo in bet_options:
-                    bets.append(Bet(**bet_info, **bo))
-
-            except (KeyError, TypeError):
-                # Got TypeError one time in testing but not sure how.
-                logger.warning(
-                    f"Data for matchup with id {matchup_id} is not shaped as expected."
-                )
-
+            bets.append(Bet(home, away, name, option, market, points, line, "Pinnacle"))
         return bets
 
+    def parse_props(self, merged, categories):
 
-class Pinnacle:
-    def __init__(self, *args):
-        self.base_url = "https://www.pinnacle.com/en/basketball/nba/matchups"
+        bets = []
+        for k, v in merged.items():
+            m, s = [v[kk] for kk in ["matchup", "straight"]]
+            try:
+                bets.extend(self.parse_prop(m, s, categories))
+            except:
+                logger.exception("An exception occurred processing the following prop:")
+                logger.error(f"Matchup:\n{m}")
+                logger.error(f"Straight:\n{s}")
+        return bets
 
-        opts = webdriver.ChromeOptions()
-        for a in args:
-            opts.add_argument(a)
+    def prop_bets_new(self, matchups, straight, categories):
+        matchups_props = self.filter_matchups_props(matchups)
+        prop_ids = self.parse_matchup_ids(matchups_props)
+        straight_props = self.filter_straight_props(straight, prop_ids)
 
-        self._props_dict = {}
-        self.driver = webdriver.Chrome(options=opts)
+        merged = self.merge_matchups_and_straight(matchups_props, straight_props)
 
-    def __enter__(self):
-        return self
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        self.driver.quit()
-
-    def _game_id(self, url):
-        """Return game ID from game URL.
-
-        URL may have trailing forward slash.
-
-        Example:
-            https://www.pinnacle.com/en/basketball/nba/detroit-pistons-vs-cleveland-cavaliers/1249774441/
-        """
-        if url[-1] == "/":
-            url = url[:-1]
-        return url.split("/").pop()
-
-    def _find_request(self, regex, url=None):
-        """
-        Find request matching search term from list of request requested by the browser.
-
-        Args:
-            regex: Regex search term.
-            url: URL to go to.
-
-        Returns:
-            The matching request.
-
-        Raises:
-            TimeOutException: If regex doesn't lead to any matches.
-        """
-        if url is not None:
-            del self.driver.requests
-            self.driver.get(url)
-
-        try:
-            return self.driver.wait_for_request(regex, timeout=180)
-        except TimeoutException:
-            logger.error(
-                f"Unable to find request matching regex: `{regex}`. Pinnacle scraping aborted."
-            )
-            # Not obeying Null object pattern.
-            return None
-
-    def iterate_games(self, tab_fn):
-        pass
-
-    def game(self, click_el=None, url=None):
-        """Go to Pinnacle game page, capture relevant requests.
-
-        Return:
-            Object containing formatted list of bets.
-        """
-        del self.driver.requests
-
-        logger.info("Intercepting game response files...")
-
-        if url is not None:
-            self.driver.get(url)
-        elif click_el is not None:
-            click_el.click()
-
-        curr = self.driver.current_url
-        game_id = self._game_id(curr)
-        straight = f"guest.api.arcadia.pinnacle.com/0.1/matchups/{game_id}/markets/related/straight"
-        related = f"guest.api.arcadia.pinnacle.com/0.1/matchups/{game_id}/related"
-
-        data = []
-        for r in [straight, related]:
-            match = self._find_request(r)
-            data.append(json.loads(match.response.body))
-
-        return PinnacleGame(*data)
-
-    def league(self):
-        del self.driver.requests
-        self.driver.get(self.base_url)
-
-        logger.info("Intercepting league response files...")
-
-        related = "guest.api.arcadia.pinnacle.com/0.1/leagues/487/matchups"
-        straight = "guest.api.arcadia.pinnacle.com/0.1/leagues/487/markets/straight"
-
-        data = []
-        for r in [straight, related]:
-            match = self._find_request(r)
-            if match is None:
-                # Not obeying Null object pattern.
-                return None
-            else:
-                data.append(json.loads(match.response.body))
-
-        return PinnacleGame(*data)
+        bets = self.parse_props(merged, categories)
+        return bets
