@@ -10,6 +10,7 @@ from bbprop.pinnacle import Pinnacle, PinnacleNBA, PinnacleNHL
 from bbprop.sportapi import NBA, BallDontLieAdapter
 from bbprop.betrange import Last10, Last3, Last5, Season
 from bbprop.storage import LocalStorage, S3Storage, BallDontLieStorage
+from apis.cloud_run.middlewares import TranslationFactory
 
 
 @pytest.fixture
@@ -38,6 +39,27 @@ def pin_nhl_merged(pinnaclenhl, nhl_matchups, nhl_straight):
     nhl_straight = pinnaclenhl.filter_straight_props(nhl_straight, m_ids)
     merged = pinnaclenhl.merge_matchups_and_straight(nhl_matchups, nhl_straight)
     return merged
+
+
+@pytest.fixture
+def pin_nba_cleaned(pinnaclenba, nba_matchups, nba_straight):
+    pinnaclenba.props = pinnaclenba.prop_bets(
+        nba_matchups, nba_straight, pinnaclenba.league.categories
+    )
+    return pinnaclenba
+
+
+@pytest.fixture
+def pin_nhl_cleaned(pinnaclenhl, nhl_matchups, nhl_straight):
+    pinnaclenhl.props = pinnaclenhl.prop_bets(
+        nhl_matchups, nhl_straight, pinnaclenhl.league.categories
+    )
+    return pinnaclenhl
+
+
+@pytest.fixture
+def translationfactory():
+    return TranslationFactory()
 
 
 @pytest.fixture

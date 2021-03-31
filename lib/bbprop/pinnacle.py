@@ -46,7 +46,7 @@ class Pinnacle:
             self.matchups, self.straight = self.fetch_data(
                 self.api_prefix, self.league.id_
             )
-            self.props = self.prop_bets_new(
+            self.props = self.prop_bets(
                 self.matchups, self.straight, self.league.categories
             )
 
@@ -180,7 +180,7 @@ class Pinnacle:
                 logger.error(f"Straight:\n{s}")
         return bets
 
-    def prop_bets_new(self, matchups, straight, categories):
+    def prop_bets(self, matchups, straight, categories):
         matchups_props = self.filter_matchups_props(matchups)
         prop_ids = self.parse_matchup_ids(matchups_props)
         straight_props = self.filter_straight_props(straight, prop_ids)
