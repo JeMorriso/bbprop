@@ -4,8 +4,6 @@ import functools
 
 import requests
 from requests.exceptions import ReadTimeout
-from nba_api.stats.static import players
-from nba_api.stats.endpoints import PlayerGameLogs
 import pandas as pd
 
 logger = logging.getLogger(__name__)
@@ -34,47 +32,20 @@ def timeout_retry(timeout):
     return timeout_args_wrapper
 
 
-class NBA:
-    """NBA API wrapper class."""
+class NHL:
+    """NHL API interface using nhlpy."""
 
-    def __init__(self):
-        pass
+    def __init__(self, players):
+        self.players = players
 
     def player_by_name(self, name):
-        """Get NBA API player dict.
+        pass
 
-        Does not require timeout_retry because using static data, not API.
-        """
-        ps = players.find_players_by_full_name(name)
-        if len(ps) == 0:
-            logger.warning(f'Could not find player "{name}".')
-            return {}
-        elif len(ps) > 1:
-            logger.warning(f'Multiple player matches for "{name}".')
-            return {}
-        else:
-            return ps[0]
-
-    # season_game_log = timeout_retry(10)(season_game_log)
-    @timeout_retry(10)
     def season_game_log(self, player_id, season):
-        # season or date range...
-        try:
-            return PlayerGameLogs(
-                player_id_nullable=player_id, season_nullable=season, proxy=self.proxy
-            ).get_data_frames()[0]
-        except IndexError:
-            logger.warning(
-                f"Player with id {player_id} has no game logs for season {season}."
-            )
-            return pd.DataFrame()
+        pass
 
-    def season_game_log_by_name(self, name, season):
-        player = self.player_by_name(name)
-        if player:
-            return self.season_game_log(player["id"], season)
-        else:
-            return pd.DataFrame()
+    def season_game_log_by_name(self, player_name, season):
+        pass
 
 
 class BallDontLie:
@@ -112,12 +83,15 @@ class BallDontLie:
     def season_game_log_by_name(self, name, season):
         player = self.player_by_name(name)
         if player:
+            logger.info(f"Retrieving game logs for {name}...")
             return self.season_game_log(player["id"], season)
         else:
             return []
 
 
 class BallDontLieAdapter(BallDontLie):
+    """Adapt output from BallDontLie to the format returned from official NBA API."""
+
     def __init__(self, players):
         super().__init__(players)
 

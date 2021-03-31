@@ -1,5 +1,3 @@
-import time
-
 import pandas as pd
 import pytest
 
@@ -121,36 +119,6 @@ class TestPinnacle:
         bets = pin.parse_props(merged, pin.league.categories)
         for b in bets:
             assert isinstance(b, Bet)
-
-
-class TestNBA:
-    def test_player_by_name(self, pinnaclegame, nba):
-        for prop in pinnaclegame.prop_bets():
-            p = nba.player_by_name(prop.name)
-
-            print(p)
-            if p:
-                assert "full_name" in p
-            time.sleep(3)
-
-    @pytest.mark.parametrize(
-        "pin",
-        [(pytest.lazy_fixture("pinnaclegame")), (pytest.lazy_fixture("pinnaclegame2"))],
-    )
-    def test_season_game_log(self, pin, nba):
-        ids = {}
-        for prop in pin.prop_bets():
-            if "washington" in prop.name.lower():
-                assert True
-                pass
-            if prop.name not in ids:
-                try:
-                    ids[prop.name] = nba.player_by_name(prop.name)
-                    glg = nba.season_game_log(ids[prop.name]["id"], "2020-21")
-                    glg.to_csv(f"tests/csv/nba/game-logs/{prop.name}.csv")
-                except KeyError:
-                    pass
-                time.sleep(3)
 
 
 class TestBallDontLieAdapter:

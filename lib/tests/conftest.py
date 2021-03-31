@@ -7,10 +7,11 @@ import pandas as pd
 import boto3
 
 from bbprop.pinnacle import Pinnacle, PinnacleNBA, PinnacleNHL
-from bbprop.sportapi import NBA, BallDontLieAdapter
+from bbprop.sportapi import BallDontLieAdapter
 from bbprop.betrange import Last10, Last3, Last5, Season
 from bbprop.storage import LocalStorage, S3Storage, BallDontLieStorage
-from apis.cloud_run.middlewares import TranslationFactory
+
+# from apis.cloud_run.middlewares import TranslationFactory
 
 
 @pytest.fixture
@@ -57,9 +58,9 @@ def pin_nhl_cleaned(pinnaclenhl, nhl_matchups, nhl_straight):
     return pinnaclenhl
 
 
-@pytest.fixture
-def translationfactory():
-    return TranslationFactory()
+# @pytest.fixture
+# def translationfactory():
+#     return TranslationFactory()
 
 
 @pytest.fixture

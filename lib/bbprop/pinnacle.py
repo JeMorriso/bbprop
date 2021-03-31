@@ -144,7 +144,7 @@ class Pinnacle:
             return "", ()
 
         name = desc[:oi].strip()
-        pin_cat = desc[oi + 1 : ci]
+        pin_cat = desc[oi + 1 : ci]  # noqa: E203
         try:
             cat = categories[pin_cat.lower()]
         except KeyError:
@@ -174,7 +174,7 @@ class Pinnacle:
             m, s = [v[kk] for kk in ["matchup", "straight"]]
             try:
                 bets.extend(self.parse_prop(m, s, categories))
-            except:
+            except:  # noqa: E722
                 logger.exception("An exception occurred processing the following prop:")
                 logger.error(f"Matchup:\n{m}")
                 logger.error(f"Straight:\n{s}")
