@@ -38,13 +38,9 @@ class TestMiddlewares:
     #     df = bet_values_dataframe(bet_values)
     #     assert len(df) > 0
 
-    # @pytest.mark.parametrize(
-    #     "pin",
-    #     [(pytest.lazy_fixture("pinnaclegame")), (pytest.lazy_fixture("pinnaclegame2"))],
-    # )
-    # def test_retrieve_game_logs(self, pin, balldontliestorage_local):
-    #     # get unique players
-    #     players = list(set([p.name for p in pin.prop_bets()]))
-    #     game_logs = retrieve_game_logs(players, balldontliestorage_local)
-    #     for k, v in game_logs.items():
-    #         assert not v.empty
+    def test_retrieve_game_logs(self, pin_nba_cleaned, balldontlie):
+        # get unique players
+        players = list(set([p.name for p in pin_nba_cleaned.props]))
+        game_logs = retrieve_game_logs(players, balldontlie)
+        for k, v in game_logs.items():
+            assert not v.empty

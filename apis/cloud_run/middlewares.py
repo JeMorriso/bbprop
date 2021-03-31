@@ -1,3 +1,5 @@
+# import logging
+
 import pandas as pd
 import requests
 
@@ -6,6 +8,11 @@ from bbprop.sportapi import BallDontLieAdapter, NHL
 from bbprop.betrange import BetRanges, Last3, Last5, Last10, Season
 
 from docker_env import LAMBDA_API
+
+# logging.basicConfig(
+#     level=logging.WARNING, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+# )
+# logger = logging.getLogger(__name__)
 
 
 class TranslationFactory:
@@ -42,13 +49,10 @@ def retrieve_players():
     return res.json()
 
 
-def retrieve_game_logs(pnames, season="2020-21"):
-    players = retrieve_players()
-    # TODO: use interface
-    bdla = BallDontLieAdapter(players)
+def retrieve_game_logs(pnames, sport_api, season="2020-21"):
     game_logs = {}
     for p in pnames:
-        glg = bdla.season_game_log_by_name(p, season)
+        glg = sport_api.season_game_log_by_name(p, season)
         if not glg.empty:
             game_logs[p] = glg
     return game_logs
@@ -109,8 +113,7 @@ def driver(pin, sport_api, league_name):
     cleaned_props = clean_player_names(pin.props, name_fn)
 
     pnames = list(set([p.name for p in cleaned_props]))
-    game_logs = retrieve_game_logs(pnames)
-    # bets = assert_bets(pg.props, game_logs)
+    game_logs = retrieve_game_logs(pnames, sport_api)
     bets = assert_bets(cleaned_props, game_logs)
 
     bet_values = calc_bet_values(bets, game_logs)
@@ -120,10 +123,9 @@ def driver(pin, sport_api, league_name):
 
 
 def nhl_driver():
-    driver(Pinnacle(PinnacleNHL(), True), NHL(), "NHL")
-    pass
+    return driver(Pinnacle(PinnacleNHL(), True), NHL(), "NHL")
 
 
 def nba_driver():
-    driver(Pinnacle(PinnacleNBA(), True), BallDontLieAdapter(), "NBA")
-    pass
+    players = retrieve_players()
+    return driver(Pinnacle(PinnacleNBA(), True), BallDontLieAdapter(players), "NBA")
