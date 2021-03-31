@@ -15,6 +15,14 @@ class TestPinnacle:
         assert len(straight) > 0
 
     @pytest.mark.parametrize(
+        "pin",
+        [pytest.lazy_fixture("pinnaclenba"), pytest.lazy_fixture("pinnaclenhl")],
+    )
+    def test_pinnacle_live(self, pin):
+        pin.run()
+        pass
+
+    @pytest.mark.parametrize(
         ("pin", "matchups", "straight"),
         [
             (

@@ -43,12 +43,13 @@ class Pinnacle:
         self.props = []
 
         if run:
-            self.matchups, self.straight = self.fetch_data(
-                self.api_prefix, self.league.id_
-            )
-            self.props = self.prop_bets(
-                self.matchups, self.straight, self.league.categories
-            )
+            self.run()
+
+    def run(self):
+        self.matchups, self.straight = self.fetch_data(self.api_prefix, self.league.id_)
+        self.props = self.prop_bets(
+            self.matchups, self.straight, self.league.categories
+        )
 
     def fetch_data(self, prefix, id_):
         logger.info("Fetching Pinnacle data...")

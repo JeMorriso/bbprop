@@ -65,13 +65,13 @@ def pin_nhl_cleaned(pinnaclenhl, nhl_matchups, nhl_straight):
 
 @pytest.fixture
 def nba_straight():
-    with open("tests/json/straight.json", "r") as f:
+    with open("tests/json/pinnacle-nba-straight.json", "r") as f:
         return json.load(f)
 
 
 @pytest.fixture
 def nba_matchups():
-    with open("tests/json/related.json", "r") as f:
+    with open("tests/json/pinnacle-nba-matchups.json", "r") as f:
         return json.load(f)
 
 
@@ -89,20 +89,10 @@ def nhl_matchups():
 
 
 @pytest.fixture
-def nba():
-    return NBA()
-
-
-@pytest.fixture
 def balldontlie():
     with open("tests/json/players/balldontlie_players.json", "r") as f:
         players = json.load(f)
     return BallDontLieAdapter(players)
-
-
-# @pytest.fixture
-# def betranges():
-#     return BetRanges()
 
 
 @pytest.fixture
