@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "bbprop_cloud_run"
+version = "0.1.0"
+description = ""
+authors = ["Jeremy Morrison <jeremy.morrison36@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^1.1.2"
+gunicorn = "^20.1.0"
+pandas = "^1.2.3"
+requests = "^2.25.1"
+bbprop = {path = "../lib"}
+chromedriver-binary = "^90.0.4430"
+selenium-wire = "3.0.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+black = "^20.8b1"
+flake8 = "^3.9.0"
+pytest-lazy-fixture = "^0.6.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
