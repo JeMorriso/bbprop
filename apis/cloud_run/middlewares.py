@@ -1,25 +1,50 @@
 import pandas as pd
 import requests
 
-from bbprop.pinnacle import Pinnacle
-from bbprop.sportapi import BallDontLieAdapter
+from bbprop.pinnacle import Pinnacle, PinnacleNBA, PinnacleNHL
+from bbprop.sportapi import BallDontLieAdapter, NHL
 from bbprop.betrange import BetRanges, Last3, Last5, Last10, Season
 
 from docker_env import LAMBDA_API
 
 
-def pinnacle_names_to_balldontlie():
-    """PJ Washington -> P.J. Washington"""
+class TranslationFactory:
+    def __init__(self):
+        self.pinnacle_to_bdl = {
+            "PJ Washington": "P.J. Washington",
+            "Robert Williams": "Robert Williams III",
+            "Marcus Morris Sr.": "Marcus Morris",
+        }
+        self.player_dicts = {"NBA": {"Pinnacle": self.pinnacle_to_bdl}}
+
+    def translator(self, league, sportsbook):
+        name_dict = self.player_dicts[league][sportsbook]
+
+        def f(name):
+            return name_dict[name] if name in name_dict else name
+
+        return f
+
     pass
 
 
+def clean_player_names(props, fn):
+    """Convert Pinnacle player names to BallDontLie player names on the prop dict."""
+    # TODO: handle NHL, NBA - can use factory function
+    for p in props:
+        p.name = fn(p.name)
+    return props
+
+
 def retrieve_players():
+    # TODO: need 2 different routes for NBA, NHL
     res = requests.get(f"{LAMBDA_API}/players")
     return res.json()
 
 
 def retrieve_game_logs(pnames, season="2020-21"):
     players = retrieve_players()
+    # TODO: use interface
     bdla = BallDontLieAdapter(players)
     game_logs = {}
     for p in pnames:
@@ -57,18 +82,48 @@ def bet_values_dataframe(bet_values):
     return pd.DataFrame(bv_list)
 
 
-def driver(driver_args):
+# def driver(driver_args):
 
-    with Pinnacle(*driver_args) as pin:
-        pg = pin.league()
-        if pg is None:
-            return []
+#     with Pinnacle(*driver_args) as pin:
+#         pg = pin.league()
+#         if pg is None:
+#             return []
 
-    pnames = list(set([p.name for p in pg.props]))
+#     cleaned_props = clean_pinnacle_props(pg.props)
+#     # pnames = list(set([p.name for p in pg.props]))
+#     pnames = list(set([p.name for p in cleaned_props]))
+#     game_logs = retrieve_game_logs(pnames)
+#     # bets = assert_bets(pg.props, game_logs)
+#     bets = assert_bets(cleaned_props, game_logs)
+
+#     bet_values = calc_bet_values(bets, game_logs)
+#     df = bet_values_dataframe(bet_values)
+
+#     return df.to_json(orient="records")
+
+
+def driver(pin, sport_api, league_name):
+
+    tf = TranslationFactory()
+    name_fn = tf.translator(league_name, "Pinnacle")
+    cleaned_props = clean_player_names(pin.props, name_fn)
+
+    pnames = list(set([p.name for p in cleaned_props]))
     game_logs = retrieve_game_logs(pnames)
-    bets = assert_bets(pg.props, game_logs)
+    # bets = assert_bets(pg.props, game_logs)
+    bets = assert_bets(cleaned_props, game_logs)
 
     bet_values = calc_bet_values(bets, game_logs)
     df = bet_values_dataframe(bet_values)
 
     return df.to_json(orient="records")
+
+
+def nhl_driver():
+    driver(Pinnacle(PinnacleNHL(), True), NHL(), "NHL")
+    pass
+
+
+def nba_driver():
+    driver(Pinnacle(PinnacleNBA(), True), BallDontLieAdapter(), "NBA")
+    pass
