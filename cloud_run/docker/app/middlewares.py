@@ -7,7 +7,7 @@ from bbprop.pinnacle import Pinnacle, PinnacleNBA, PinnacleNHL
 from bbprop.sportapi import BallDontLieAdapter, NHL
 from bbprop.betrange import BetRanges, Last3, Last5, Last10, Season
 
-from docker_env import LAMBDA_API
+from app.docker_env import LAMBDA_API
 
 # logging.basicConfig(
 #     level=logging.WARNING, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"

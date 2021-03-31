@@ -10,6 +10,7 @@ ENV=$1
 
 # requirements.txt will not pick up local editable dependency.
 cp -r ../../lib/bbprop .
+cp -r ../app .
 
 if [ "$ENV" == "local" ]
 then
@@ -23,4 +24,5 @@ else
     echo "Use 'local' or 'remote' as script argument."
 fi
 
-rm -r bbprop
+# rm -r app
+# rm -r bbprop

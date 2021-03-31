@@ -1,19 +1,16 @@
 # Credit: https://dev.to/googlecloud/using-headless-chrome-with-cloud-run-3fdp
 
 # Use the official Python image.
-# https://hub.docker.com/_/python
-FROM python:3.8
+FROM python:3.9
 
-# Install manually all the missing libraries
+# Install manually all the missing libraries for Chrome.
 RUN apt-get update
 RUN apt-get install -y gconf-service libasound2 libatk1.0-0 libcairo2 libcups2 libfontconfig1 libgdk-pixbuf2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libxss1 fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils libgbm1
 
-# Install Chrome
+# Install Chrome.
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install
 
-# Install Python dependencies.
-# COPY bbprop_api/cloud_run/requirements.txt requirements.txt
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
@@ -21,13 +18,9 @@ RUN pip install -r requirements.txt
 ENV APP_HOME /app
 WORKDIR $APP_HOME
 
-ADD app/app.py app.py
 ADD bbprop bbprop
-ADD docker_env.py docker_env.py
-ADD middlewares.py middlewares.py
+ADD app/app.py app/app.py
+ADD app/middlewares.py app/middlewares.py
+ADD app/docker_env.py app/docker_env.py
 
-# Run the web service on container startup. Here we use the gunicorn
-# webserver, with one worker process and 8 threads.
-# For environments with multiple CPU cores, increase the number of workers
-# # to be equal to the cores available.
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 'app:create_app()'
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 'app.app:app'
