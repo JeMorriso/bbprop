@@ -212,44 +212,32 @@ class TestBetRanges:
 
 
 class TestStorage:
-    def test_s3storage_write(self, localstorage, s3storage):
-        df = localstorage.csv_to_dataframe(
-            f"{localstorage.game_log_dir}/Andre Drummond.csv"
-        )
-
-        s3storage.dataframe_to_csv(df, "Andre Drummond.csv")
-
-    def test_s3storage_read(self, s3storage):
-        df = s3storage.csv_to_dataframe("game-logs/Andre Drummond.csv")
-        assert len(df) > 0
-
-    def test_s3storage_player_names(self, s3storage):
-        s3storage.player_names()
-        pass
+    def test_s3storage_read_and_write(self, s3storage):
+        csv_path = f"{s3storage.dir}/read_and_write/qux.csv"
+        df = s3storage.csv_to_dataframe(csv_path)
+        s3storage.dataframe_to_csv(df, csv_path)
 
     def test_s3storage_find_files(self, s3storage):
-        keys = s3storage.find_files("bets/")
+        keys = s3storage.find_files(f"{s3storage.dir}/find_files/")
         assert keys
         pass
 
     def test_s3storage_find_file(self, s3storage):
-        key = s3storage.find_file("bets/2021-03-04T16:51:52.csv")
+        # Use filename formatted like bet csvs.
+        key = s3storage.find_file(f"{s3storage.dir}/find_file/2021-03-04T14:37:37.csv")
         assert key
 
     def test_s3storage_move_file(self, s3storage):
-        source = "tests/test_sub/foo.csv"
-        dest = "tests/foo.csv"
+        source = f"{s3storage.dir}/move_file/foo.csv"
+        dest = f"{s3storage.dir}/foo.csv"
         s3storage.move_file(source, dest)
         assert not s3storage.find_file(source)
         s3storage.move_file(dest, source)
         assert s3storage.find_file(source)
 
-    @pytest.mark.parametrize(
-        "bdl_store",
-        [
-            (pytest.lazy_fixture("balldontliestorage_local")),
-            (pytest.lazy_fixture("balldontliestorage_s3")),
-        ],
-    )
-    def test_balldontliestorage_players(self, bdl_store):
-        assert len(bdl_store.players()) > 0
+
+class TestLeagueStorage:
+    def test_players(self, leaguestorage_NBA):
+        players = leaguestorage_NBA.players()
+        assert len(players) > 0
+

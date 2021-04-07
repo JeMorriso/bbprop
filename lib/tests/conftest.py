@@ -1,17 +1,16 @@
 import json
-from pathlib import Path
 import os
 
 import pytest
-import pandas as pd
 import boto3
+from dotenv import load_dotenv
 
 from bbprop.pinnacle import Pinnacle, PinnacleNBA, PinnacleNHL
 from bbprop.sportapi import BallDontLieAdapter
 from bbprop.betrange import Last10, Last3, Last5, Season
-from bbprop.storage import LocalStorage, S3Storage, BallDontLieStorage
+from bbprop.storage import LeagueStorage, S3Storage
 
-# from apis.cloud_run.middlewares import TranslationFactory
+load_dotenv()
 
 
 @pytest.fixture
@@ -56,11 +55,6 @@ def pin_nhl_cleaned(pinnaclenhl, nhl_matchups, nhl_straight):
         nhl_matchups, nhl_straight, pinnaclenhl.league.categories
     )
     return pinnaclenhl
-
-
-# @pytest.fixture
-# def translationfactory():
-#     return TranslationFactory()
 
 
 @pytest.fixture
@@ -116,60 +110,30 @@ def season():
 
 
 @pytest.fixture
-def nba_gamelogs():
-    dfs = {}
-    p = Path("tests/csv/nba/game-logs")
-    for fp in p.iterdir():
-        with open(fp, "r") as f:
-            # p_name = " ".join(str(fp).split()[:2]).split("/")[-1]
-            p_name = str(fp).split("/")[-1].split(".")[0]
-            dfs[p_name] = pd.read_csv(f)
-    return dfs
-
-
-@pytest.fixture
-def balldontlie_gamelogs():
-    dfs = {}
-    p = Path("tests/csv/balldontlie/game-logs")
-    for fp in p.iterdir():
-        with open(fp, "r") as f:
-            # p_name = " ".join(str(fp).split()[:2]).split("/")[-1]
-            p_name = str(fp).split("/")[-1].split(".")[0]
-            dfs[p_name] = pd.read_csv(f)
-    return dfs
-
-
-@pytest.fixture
-def balldontliestorage_local():
-    localstorage = LocalStorage("tests/json")
-    return BallDontLieStorage(localstorage)
-
-
-@pytest.fixture
-def balldontliestorage_s3(s3storage):
-    return BallDontLieStorage(s3storage)
-
-
-@pytest.fixture
-def localstorage():
-    return LocalStorage("tests/csv")
-
-
-@pytest.fixture
 def s3storage():
+    """S3Storage configured with tests/ directory as its root dir."""
     return S3Storage(
-        # session=boto3.session.Session(profile_name="default"),
         session=boto3.session.Session(
             aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"),
             aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
         ),
         bucket=os.getenv("S3_BUCKET"),
+        dir="tests",
     )
 
 
 @pytest.fixture
-def tests3storage(s3storage):
-    """Use test directories in s3 bucket."""
-    s3storage.bets_dir = "tests"
-    s3storage.latest_dir = "tests/test_sub"
-    return s3storage
+def s3storage_prod():
+    return S3Storage(
+        session=boto3.session.Session(
+            aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"),
+            aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
+        ),
+        bucket=os.getenv("S3_BUCKET"),
+        dir="",
+    )
+
+
+@pytest.fixture
+def leaguestorage_NBA(s3storage_prod):
+    return LeagueStorage(s3storage_prod, "NBA")
