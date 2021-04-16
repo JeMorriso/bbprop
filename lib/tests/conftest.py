@@ -84,7 +84,7 @@ def nhl_matchups():
 
 @pytest.fixture
 def balldontlie():
-    with open("tests/json/players/balldontlie_players.json", "r") as f:
+    with open("tests/json/NBA/players.json", "r") as f:
         players = json.load(f)
     return BallDontLieAdapter(players)
 

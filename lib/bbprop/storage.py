@@ -100,6 +100,8 @@ class LeagueStorage:
     """Compose LocalStorage / S3Storage, add League specific storage configuration.
 
     Better to use composition here instead of trying to inherit from both.
+    # TODO
+    Currently will not work with LocalStorage due to required methods not implemented.
 
     Attributes:
         dir: League root directory.
@@ -120,3 +122,11 @@ class LeagueStorage:
             self.store.dir, self.dir, self.players_dir, "players.json"
         )
         return self.store.load_json(path)
+
+    def latest(self):
+        """Return the first file in the 'latest' directory."""
+        path = self.store.generate_path(self.store.dir, self.dir, self.latest_dir)
+        latest_file = self.store.find_file(path)
+        bet_values = self.store.csv_to_dataframe(latest_file)
+        bv_json = bet_values.to_json(orient="records")
+        return bv_json
