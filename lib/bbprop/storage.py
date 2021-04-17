@@ -113,20 +113,17 @@ class LeagueStorage:
     def __init__(self, store, dir):
         self.store = store
         self.dir = dir
-        self.players_dir = "players"
-        self.bets_dir = "bets"
-        self.latest_dir = "latest"
+        self.players_dir = self.store.generate_path(self.store.dir, self.dir, "players")
+        self.bets_dir = self.store.generate_path(self.store.dir, self.dir, "bets")
+        self.latest_dir = self.store.generate_path(self.store.dir, self.dir, "latest")
 
     def players(self):
-        path = self.store.generate_path(
-            self.store.dir, self.dir, self.players_dir, "players.json"
-        )
+        path = self.store.generate_path(self.players_dir, "players.json")
         return self.store.load_json(path)
 
     def latest(self):
         """Return the first file in the 'latest' directory."""
-        path = self.store.generate_path(self.store.dir, self.dir, self.latest_dir)
-        latest_file = self.store.find_file(path)
-        bet_values = self.store.csv_to_dataframe(latest_file)
+        fpath = self.store.find_file(self.latest_dir)
+        bet_values = self.store.csv_to_dataframe(fpath)
         bv_json = bet_values.to_json(orient="records")
         return bv_json
